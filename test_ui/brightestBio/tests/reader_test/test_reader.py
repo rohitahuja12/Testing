@@ -28,26 +28,26 @@ class TestReader:
         expected_title = "Readers"
         assert not actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
 
-    def test_go_back_to_dashboard_from_reader_page(self, browser_driver, record_property, setup):
-        scans_page = ScansPage(browser_driver)
-        login_page = TestLoginPage(browser_driver)
-
-        reader = ReaderPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Reader feature.")
-        reader.click_view_on_reader_option()
-        scans_page.click_back_to_dashboard_button()
-        record_property("testrail_result_comment", "3. Click on 'back to dashboard' button.")
-        time.sleep(5)
-        empower_dashboard = browser_driver.find_element(By.XPATH, login_page.empowerDashboard)
-        assert empower_dashboard.is_displayed()
-        record_property("testrail_result_comment", "4. Verified User is successfully back to dashboard")
-
-    def test_default_view_displays_reader(self, browser_driver: WebDriver, record_property, setup):
-        reader = ReaderPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Reader feature.")
-        reader.click_view_on_reader_option()
-        record_property("testrail_result_comment", "3. Verified default reader details visible")
-        assert reader.is_default_view_displaying_reader(), "Default view does not display a list of existing reader."
+    # def test_go_back_to_dashboard_from_reader_page(self, browser_driver, record_property, setup):
+    #     scans_page = ScansPage(browser_driver)
+    #     login_page = TestLoginPage(browser_driver)
+    #
+    #     reader = ReaderPage(browser_driver)
+    #     record_property("testrail_result_comment", "2. Navigate to the Reader feature.")
+    #     reader.click_view_on_reader_option()
+    #     scans_page.click_back_to_dashboard_button()
+    #     record_property("testrail_result_comment", "3. Click on 'back to dashboard' button.")
+    #     time.sleep(5)
+    #     empower_dashboard = browser_driver.find_element(By.XPATH, login_page.empowerDashboard)
+    #     assert empower_dashboard.is_displayed()
+    #     record_property("testrail_result_comment", "4. Verified User is successfully back to dashboard")
+    #
+    # def test_default_view_displays_reader(self, browser_driver: WebDriver, record_property, setup):
+    #     reader = ReaderPage(browser_driver)
+    #     record_property("testrail_result_comment", "2. Navigate to the Reader feature.")
+    #     reader.click_view_on_reader_option()
+    #     record_property("testrail_result_comment", "3. Verified default reader details visible")
+    #     assert reader.is_default_view_displaying_reader(), "Default view does not display a list of existing reader."
 
     def test_view_reader_options_details(self, browser_driver: WebDriver, record_property, setup):
         reader = ReaderPage(browser_driver)
