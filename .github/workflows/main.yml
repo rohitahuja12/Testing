@@ -40,6 +40,6 @@ jobs:
         with:
           name: test-results
           path: |
-            pytest_report.xml
-            pytest_report.html
-            reports
+            test_ui/pytest_report.xml
+            test_ui/pytest_report.html
+            test_ui/reports
