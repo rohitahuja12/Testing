@@ -4,6 +4,9 @@ from brightestBio.pages.common import CommonOps
 
 
 class TestLoginPage(CommonOps):
+        def __init__(self, driver):
+        super().__init__(driver)
+    
     username_input = (By.ID, "username")
     password_input = (By.ID, "password")
     login_button = (By.XPATH, "(//button[@type='submit'])")
