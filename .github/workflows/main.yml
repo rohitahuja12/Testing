@@ -41,5 +41,5 @@ jobs:
           name: test-results
           path: |
             test_ui/reports
-            test_ui/pytest_report.xml
-            test_ui/pytest_report.html
+            pytest_report.xml
+            pytest_report.html
