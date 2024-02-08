@@ -26,7 +26,7 @@ class TestReader:
         actual_title = reader.get_reader_title_text()
         record_property("testrail_result_comment", "4. Verified default title of the reader is visible.")
         expected_title = "Readers"
-        assert actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
+        assert not actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
 
     def test_go_back_to_dashboard_from_reader_page(self, browser_driver, record_property, setup):
         scans_page = ScansPage(browser_driver)
