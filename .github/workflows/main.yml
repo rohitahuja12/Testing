@@ -40,4 +40,4 @@ jobs:
         with:
           name: test-results
           path: |
-            reports
+            test_ui/reports

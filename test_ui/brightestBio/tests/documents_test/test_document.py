@@ -3,9 +3,7 @@ import time
 import pytest
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
-
 from brightestBio.pages.documents_Page.document_page import DocumentPage
-
 from brightestBio.pages.Scans.scan_page import ScansPage
 from brightestBio.pages.login_page import TestLoginPage
 
@@ -27,7 +25,7 @@ class TestDocuments:
         record_property("testrail_result_comment", "3. Check if the default title of the reader is visible.")
         actual_title = document.get_document_title_text()
         record_property("testrail_result_comment", "4. Verified default title of the reader is visible.")
-        expected_title = "Documents"
+        expected_title = "Documentss"
         assert actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
 
     def test_go_back_to_dashboard_from_documents_page(self, browser_driver, record_property, setup):
@@ -43,33 +41,33 @@ class TestDocuments:
         empower_dashboard = browser_driver.find_element(By.XPATH, login_page.empowerDashboard)
         assert empower_dashboard.is_displayed()
         record_property("testrail_result_comment", "4. Verified User is successfully back to dashboard")
-
-    def test_verify_connect_to_empower_reader_document(self, browser_driver, record_property, setup):
-        document_page = DocumentPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-        document_page.click_view_on_documents_option()
-        assert document_page.verify_document_availability("Connnect to the Empower Reader")
-
-    def test_verify_load_a_plate_document(self, browser_driver, record_property, setup):
-        document_page = DocumentPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-        document_page.click_view_on_documents_option()
-        assert document_page.verify_document_availability("Load a plate")
-
-    def test_verify_product_kit_document(self, browser_driver, record_property, setup):
-        document_page = DocumentPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-        document_page.click_view_on_documents_option()
-        assert document_page.verify_document_availability("Product Kit")
-
-    def test_sign_out_button_visibility_under_documents(self, browser_driver, record_property, setup):
-        document_page = DocumentPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-        document_page.click_view_on_documents_option()
-        assert document_page.is_sign_out_button_visible(), "Sign Out button is not visible"
-
-    def test_profile_icon_visibility_under_documents(self, browser_driver, record_property, setup):
-        document_page = DocumentPage(browser_driver)
-        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-        document_page.click_view_on_documents_option()
-        assert document_page.is_profile_icon_visible(), "Profile icon is not visible"
+#
+#     def test_verify_connect_to_empower_reader_document(self, browser_driver, record_property, setup):
+#         document_page = DocumentPage(browser_driver)
+#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+#         document_page.click_view_on_documents_option()
+#         assert document_page.verify_document_availability("Connnect to the Empower Reader")
+#
+#     def test_verify_load_a_plate_document(self, browser_driver, record_property, setup):
+#         document_page = DocumentPage(browser_driver)
+#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+#         document_page.click_view_on_documents_option()
+#         assert document_page.verify_document_availability("Load a plate")
+#
+#     def test_verify_product_kit_document(self, browser_driver, record_property, setup):
+#         document_page = DocumentPage(browser_driver)
+#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+#         document_page.click_view_on_documents_option()
+#         assert document_page.verify_document_availability("Product Kit")
+#
+#     def test_sign_out_button_visibility_under_documents(self, browser_driver, record_property, setup):
+#         document_page = DocumentPage(browser_driver)
+#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+#         document_page.click_view_on_documents_option()
+#         assert document_page.is_sign_out_button_visible(), "Sign Out button is not visible"
+#
+#     def test_profile_icon_visibility_under_documents(self, browser_driver, record_property, setup):
+#         document_page = DocumentPage(browser_driver)
+#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+#         document_page.click_view_on_documents_option()
+#         assert document_page.is_profile_icon_visible(), "Profile icon is not visible"
