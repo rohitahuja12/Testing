@@ -28,7 +28,7 @@ jobs:
         run: |
           mkdir -p reports
           cd test_ui
-          BB_USERNAME=$BB_USERNAME BB_PASSWORD=$BB_PASSWORD pytest --junitxml=../reports/pytest_report.xml --html=../reports/pytest_report.html
+          BB_USERNAME=$BB_USERNAME BB_PASSWORD=$BB_PASSWORD pytest --junitxml=pytest_report.xml --html=pytest_report.html
         continue-on-error: true
         env:
           BB_USERNAME: ${{ secrets.BB_USERNAME }}  # Use secret for BB_USERNAME
