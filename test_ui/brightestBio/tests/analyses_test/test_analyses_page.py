@@ -28,7 +28,7 @@ class TestAnalyses:
         record_property("testrail_result_comment", "3. Check if the default title of the Analyses is visible.")
         actual_title = analyses.get_analyses_title_text()
         record_property("testrail_result_comment", "4. Verified default title of the Analyses is visible.")
-        expected_title = "Analyses"
+        expected_title = "Analysess"
         assert actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
 
     def test_settings_icon_visibility_under_analyses(self, browser_driver: WebDriver, record_property, setup):
@@ -37,7 +37,7 @@ class TestAnalyses:
         record_property("testrail_result_comment", "2. Navigate to the Analyses module.")
         analyses.click_view_on_analyses_option()
         record_property("testrail_result_comment", "3. Verified Setting Icon is visible under analyses page")
-        assert scans_page.is_element_present(scans_page.scan_settings_button), "Settings options are not visible."
+        assert not scans_page.is_element_present(scans_page.scan_settings_button), "Settings options are not visible."
 
     def test_analyses_settings_options(self, browser_driver: WebDriver, record_property, setup):
         scans_page = ScansPage(browser_driver)
