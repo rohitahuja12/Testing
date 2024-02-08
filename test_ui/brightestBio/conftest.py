@@ -22,7 +22,7 @@ def setup_driver():
         url = credentials.url.format(environment=env)
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument("--no-sandbox")
-        chrome_options.add_argument("--headed")
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-dev-shm-usage")
         # driver = webdriver.Remote(command_executor="http://localhost:4444/wd/hub", options=chrome_options)
         driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
