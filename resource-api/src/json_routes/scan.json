@@ -1,0 +1,76 @@
+{
+	"singularEntity": "scan",
+	"pluralEntity": "scans",
+	"hasHeartbeat": false,
+	"onCreate": [
+		"lambda x: {**x, 'status': x.get('status','QUEUED')}"
+	],
+	"hasAttachments": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A scan to be processed by a reader",
+		"properties": {
+			"readerSerialNumber": {
+				"type": "string",
+				"description": "The serialNumber of the reader which will perform this scan"
+			},
+			"name": {
+				"type": "string",
+				"description": "A user-provided name for the scan"
+			},
+			"notes": {
+				"type": "string",
+				"description": "User-created notes for the scan"
+			},
+			"protocol": {
+				"type": "string",
+				"description": "The name of the scan protocol"
+			},
+			"protocolArgs": {
+				"type": "object",
+				"description": "Object containing named arguments passed to the protocol."
+			},
+			"configIds": {
+				"type": "array",
+				"description": "Ids of configurations used to perform this scan",
+				"items": {
+					"type": "object",
+					"properties": {
+						"name": {
+							"type": "string"
+						},
+						"id": {
+							"type": "string"
+						}
+					}
+				}
+			},
+			"estimatedCompletionTime": {
+				"type": "string",
+				"description": "An ISO timestamp of the estimated completion of the scan."
+			},
+			"status": {
+				"type": "string",
+				"description": "The current status of this scan. Can be one of QUEUED, RUNNING, COMPLETE, ERROR, or ABORTED.",
+				"enum": [
+					"NOT_QUEUED",
+					"QUEUED",
+					"RUNNING",
+					"COMPLETE",
+					"ERROR",
+					"ABORTED"
+				]
+			},
+			"errors": {
+				"type": "array",
+				"description": "List of errors associated with this scan",
+				"items": { "type": "string" }
+			}
+		},
+		"required":[
+			"name",
+			"protocol",
+			"status"
+		]
+	}
+}

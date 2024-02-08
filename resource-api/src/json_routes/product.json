@@ -1,0 +1,35 @@
+{
+	"singularEntity": "product",
+	"pluralEntity": "products",
+	"hasHeartbeat": false,
+	"hasAttachments": false,
+	"allowIdOnCreate": true,
+	"jsonSchema": {
+		"type": "object",
+		"properties": {
+			"productName": { "type": "string" },
+			"productDescription": {
+				"type": "object",
+				"properties": {
+					"name": { "type": "string" },
+					"description": { "type": "string" },
+					"format": { "type": "string" }
+				}
+			},
+			"concentrationUnit": { "type": "string" },
+			"exposures": { 
+				"type": "array",
+				"items": { "type": "number" }
+			},
+			"recommendedStandardDilutionFactor": { "type": "number" },
+			"recommendedInitialConcentrations": { "type": "object" },
+			"features": {
+				"type": "object"
+			}
+		},
+		"required": [
+			"productName",
+			"features"
+		]
+	}
+}

@@ -1,0 +1,43 @@
+name: Run Tests and Upload Artifacts
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies and plugins
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r test_ui/requirements.txt  # Install project dependencies
+          pip install pytest-html          # Install pytest-html plugin
+
+      - name: Run Pytest and generate reports
+        run: |
+          mkdir -p reports
+          cd test_ui
+          BB_USERNAME=$BB_USERNAME BB_PASSWORD=$BB_PASSWORD pytest --junitxml=../reports/pytest_report.xml --html=../reports/pytest_report.html
+        continue-on-error: true
+        env:
+          BB_USERNAME: ${{ secrets.BB_USERNAME }}  # Use secret for BB_USERNAME
+          BB_PASSWORD: ${{ secrets.BB_PASSWORD }}  # Use secret for BB_PASSWORD
+
+      - name: Upload Test Artifacts
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: test-results
+          path: |
+            reports

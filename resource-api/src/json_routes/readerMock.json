@@ -1,0 +1,85 @@
+{
+	"singularEntity": "readerMock",
+	"pluralEntity": "readerMocks",
+	"hasHeartbeat": false,
+	"hasAttachments": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A scan to be processed by a reader",
+		"properties": {
+			"serialNumber": {
+				"type": "string",
+				"description": "The name of the reader"
+			},
+			"micronsPerMotorStep": {
+				"type": "object",
+				"description": "How many microns the stage (or objective) will travel along the X/Y/Z directions per step of the motor",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" },
+					"z": { "type": "number" }
+				}
+			},
+			"movementLimitMicrons": {
+				"type": "object",
+				"description": "The distance in microns that the stage (X/Y) or the objective (Z) can move before it hits the limit.",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" },
+					"z": { "type": "number" }
+				}
+			},
+			"cameraTopLeftApprox": {
+				"type": "object",
+				"description": "The coordinate of the top left corner of the camera's fov.",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" }
+				}
+			},
+			"cameraBottomRightApprox": {
+				"type": "object",
+				"description": "The coordinate of the top left corner of the camera's fov.",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" }
+				}
+			},
+			"defaultZ": {
+				"type": "number",
+				"description": "The default Z value for the stage."
+			},
+			"imageMirrorX": {
+				"type": "boolean",
+				"description": "Should the image be mirrored along the X axis prior to processing?"
+			},
+			"imageMirrorY": {
+				"type": "boolean",
+				"description": "Should the image be mirrored along the Y axis prior to processing?"
+			},
+			"imageRotation": {
+				"type": "number",
+				"description": "Rotate the image this many degrees clockwise prior to processing?"
+			},
+			"mockImageTopLeft": {
+				"type": "object",
+				"description": "The coordinate of the top left corner of the mock image.",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" }
+				}
+			},
+			"mockImageBottomRight": {
+				"type": "object",
+				"description": "The coordinate of the bottom right corner of the mock image.",
+				"properties": {
+					"x": { "type": "number" },
+					"y": { "type": "number" }
+				}
+			}
+		},
+		"required": [
+			"serialNumber"
+		]
+	}
+}

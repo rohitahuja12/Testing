@@ -1,0 +1,15 @@
+{
+	"description": "Synchronize readers on disk with readers in database",
+	"strategy": "polling",
+	"pollPeriodSeconds": "5",
+	"source": {
+		"type": "filesystem",
+		"path": "/readers"
+	},
+	"destination": {
+		"type": "api",
+		"host": "0.0.0.0:5000",
+		"documentType": "readers",
+		"nameField": "serialNumber"
+	}
+}

@@ -1,0 +1,35 @@
+FROM python:3.11-rc-slim-buster
+
+RUN apt-get update # && apt-get -y dist-upgrade
+
+RUN apt-get -y install \
+	apt-utils \
+    build-essential \
+    gcc \
+	ffmpeg \
+	libsm6 \
+	libxext6 \
+	curl \
+	zlib1g-dev \
+	libjpeg-dev \
+	gfortran \
+	udev 
+
+# Dev stuff
+#RUN apt-get -y install \
+	#usbutils
+
+
+# other stuff
+
+COPY reader/requirements.txt phoenix/reader/requirements.txt
+RUN pip3 install -r phoenix/reader/requirements.txt
+
+COPY reader phoenix/reader
+COPY common phoenix/common
+
+ENV COMPONENT_CLASS=reader
+ENV PHOENIX_HOME=/phoenix
+WORKDIR phoenix
+
+CMD python3 reader/svc_orchestrator/main.py reader/orchestrator-config.json

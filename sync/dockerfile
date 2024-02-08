@@ -1,0 +1,21 @@
+FROM python:3.9-slim-buster
+
+RUN apt-get update 
+RUN apt-get install curl -y
+
+COPY sync/requirements.txt phoenix/sync/requirements.txt
+RUN pip install -r phoenix/sync/requirements.txt
+
+COPY sync/src phoenix/sync/src
+COPY common phoenix/common
+RUN pip install -r phoenix/common/requirements.txt
+
+
+ENV COMPONENT_CLASS=sync
+ENV PHOENIX_HOME=/phoenix
+
+WORKDIR phoenix
+
+#RUN mypy ./sync/src/main.py
+
+CMD ["python", "./sync/src/main.py"]

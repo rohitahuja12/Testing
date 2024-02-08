@@ -1,0 +1,25 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplify345df951a04e4-staging-34945-authRole",
+      "UnauthRoleArn": "arn:aws:iam::046456031965:role/amplify-amplify345df951a04e4-staging-34945-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::046456031965:role/amplify-amplify345df951a04e4-staging-34945-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplify345df951a04e4-staging-34945-deployment",
+      "UnauthRoleName": "amplify-amplify345df951a04e4-staging-34945-unauthRole",
+      "StackName": "amplify-amplify345df951a04e4-staging-34945",
+      "StackId": "arn:aws:cloudformation:us-east-2:046456031965:stack/amplify-amplify345df951a04e4-staging-34945/b28ac500-f39c-11ed-984e-0276cce90b53",
+      "AmplifyAppId": "dhehml0onpa1h"
+    },
+    "categories": {
+      "auth": {
+        "phoenixuiwebappfa8d17d0": {
+          "userPoolId": "us-east-2_gFx4baNIP",
+          "userPoolName": "group-based-0223-pool",
+          "webClientId": "31051lqjare1fh3aqolff6u71g",
+          "nativeClientId": "31051lqjare1fh3aqolff6u71g"
+        }
+      }
+    }
+  }
+}

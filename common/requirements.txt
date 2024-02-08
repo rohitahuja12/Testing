@@ -1,0 +1,7 @@
+requests
+websockets
+aiostream
+dotmap
+matplotlib
+dataclasses-json
+jsonref

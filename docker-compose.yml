@@ -1,0 +1,270 @@
+version: "3.9"
+
+volumes:
+  logs:
+  db:
+  testbenchstuff:
+  readerdata:
+  readercache:
+
+services:
+
+##### Production Services #####
+
+  reader:
+    #image: 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_reader:dev
+    build:
+      context: .
+      dockerfile: ./reader/dockerfile
+    volumes:
+      - ./reader/logs:/phoenix/reader/logs
+      - /dev:/dev
+      - readerdata:/readerdata
+      - /run/udev/control:/run/udev/control
+      - /run/udev:/run/udev
+      - readercache:/readercache
+    environment:
+      - API_URL=${API_URL}
+      - TASK_WORKER_REQUEST_TRANSPORT=tcp://0.0.0.0:8140
+      - TASK_WORKER_KILL_TRANSPORT=tcp://0.0.0.0:8141
+      - TASK_WORKER_STATE_STREAM_TRANSPORT=tcp://0.0.0.0:8142
+      - TASK_WORKER_TASK_STATE_LISTENER_TRANSPORT=ipc://task_state_listener
+      - TASK_WORKER_DO_INITIALIZE=true
+      - CONTROLLER_BOARD_MOCK=false
+      - CONTROLLER_BOARD_REQUEST_TRANSPORT=tcp://0.0.0.0:8120
+      - CONTROLLER_BOARD_STREAM_TRANSPORT=tcp://0.0.0.0:8121
+      - CONTROLLER_BOARD_ERROR_STREAM_TRANSPORT=tcp://0.0.0.0:8122
+      - CONTROLLER_STAGE_MOCK=false
+      - CONTROLLER_STAGE_REQUEST_TRANSPORT=tcp://0.0.0.0:8100
+      - CONTROLLER_STAGE_MOTOR_CLIENT_TRANSPORT=tcp://0.0.0.0:8103
+      - CONTROLLER_STAGE_KILL_TRANSPORT=tcp://0.0.0.0:8104
+      - CONTROLLER_STAGE_MANAGER_STATE_LISTENER_TRANSPORT=ipc://stage_manager_state_listener
+      - CONTROLLER_STAGE_MANAGER_STATE_STREAM_TRANSPORT=tcp://0.0.0.0:8105
+      - CONTROLLER_CAMERA_REQUEST_TRANSPORT=tcp://0.0.0.0:8110
+      - CONTROLLER_CAMERA_STREAM_TRANSPORT=tcp://0.0.0.0:8111
+      - CONTROLLER_CAMERA_IMAGE_STREAM_TRANSPORT=tcp://0.0.0.0:8112
+      - CONTROLLER_CAMERA_COMPRESSED_IMAGE_STREAM_TRANSPORT=tcp://0.0.0.0:8113
+      - CONTROLLER_BARCODEREADER_REQUEST_TRANSPORT=tcp://0.0.0.0:8150
+      - LOCATIONS_REQUEST_TRANSPORT=tcp://0.0.0.0:8130
+      - READER_CACHE_REQUEST_TRANSPORT=tcp://0.0.0.0:8131
+      - LOG_EVENTS=true
+    privileged: true
+    network_mode: host
+    # ports:
+    #   - 8140:8140
+    #   - 8120:8120
+    #   - 8100:8100
+    #   - 8110:8110
+    #   - 8130:8130
+    #   - 8131:8131
+    
+  lfa-reader:
+    build:
+      context: .
+      dockerfile: ./lfa-reader/dockerfile
+    platform: linux/arm64
+    volumes:
+      - /dev:/dev
+      - /run/udev/control:/run/udev/control
+      - /run/udev:/run/udev
+    environment:
+      - CONTROLLER_CAMERA_REQUEST_TRANSPORT=tcp://0.0.0.0:8000
+      - CONTROLLER_CAMERA_IMAGE_STREAM_TRANSPORT=tcp://0.0.0.0:8001
+      - CONTROLLER_LASER_REQUEST_TRANSPORT=tcp://0.0.0.0:8100
+      - CONTROLLER_BARCODEREADER_REQUEST_TRANSPORT=tcp://0.0.0.0:8150
+    privileged: true
+    network_mode: host
+
+  reader-dev:
+    image: 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_reader:dev
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=https://dev.api.brightestbio.com
+      - DB_NAME=${DB_NAME}
+      - API_URL=${API_URL}
+      - COMPONENT_CLASS=api
+      - HOST_PHOENIX_HOME=${PHOENIX_HOME}
+    privileged: true
+    volumes:
+      - logs:/phoenix/logs
+      - ${HOST_PHOENIX_HOME}/images:/images
+      - /dev:/dev
+
+  db:
+    build:
+      context: .
+      dockerfile: ./db/dockerfile
+    restart: always
+    volumes:
+      - db:/data/db
+        #network_mode: host
+    hostname: db
+    ports:
+      - 27017:27017
+    
+  resource-api:
+    build:
+      context: .
+      dockerfile: ./resource-api/dockerfile
+    hostname: resource-api
+      #network_mode: host
+    ports:
+      - 80:80
+    environment:
+      - DB_PROTOCOL=${DB_PROTOCOL}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - COMPONENT_CLASS=api
+      - HOST_PHOENIX_HOME=${PHOENIX_HOME}
+      - ATTACHMENTS_BUCKET
+      - ATTACHMENTS_DRIVER
+    volumes:
+      - ~/.aws:/root/.aws/
+  
+  analyzer:
+    build:
+      context: .
+      dockerfile: ./analyzer/dockerfile
+    volumes:
+      - logs:/phoenix/logs
+      - testbenchstuff:/testbenchstuff
+    environment:
+      #- DB_USER=${DB_USER}
+      #- DB_PASSWORD=${DB_PASSWORD}
+      #- DB_HOST=${DB_HOST}
+      #- DB_NAME=${DB_NAME}
+      - COMPONENT_CLASS=analyzer
+      - HOST_PHOENIX_HOME=${PHOENIX_HOME}
+      - API_URL=${API_URL}
+      - AUTH_TOKEN
+      - AUTH_DOMAIN=""
+      - AUTH_DOMAIN=dev-zazkmky7c1v5de5q.us.auth0.com
+      - AUTH_CLIENT_ID=""
+      - AUTH_CLIENT_SECRET=""
+
+  logger:
+    build:
+      context: .
+      dockerfile: ./logger/dockerfile
+    volumes:
+      - logs:/phoenix/logs
+      - //var/run/docker.sock://var/run/docker.sock
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - COMPONENT_CLASS=logger
+      - LOG_SHIP_INTERVAL=5
+
+  # there is a bug in database ids that is keeping this from working
+  sync:
+    build:
+      context: .
+      dockerfile: ./sync/dockerfile
+    volumes:
+      - logs:/phoenix/logs
+      - //var/run/docker.sock://var/run/docker.sock
+      - ${PHOENIX_HOME}/data/readers:/readers
+      - ${PHOENIX_HOME}/data/products:/products
+      - ${PHOENIX_HOME}/test-data/dumpithere:/out
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - COMPONENT_CLASS=sync
+
+  dev-ui:
+    build:
+      context: .
+      dockerfile: ./dev-ui/dockerfile
+    volumes:
+      - logs:/phoenix/logs
+    environment:
+      - COMPONENT_CLASS=dev-ui
+    ports:
+      - 8080:80
+  
+  ui-webapp:
+    build:
+      context: .
+      dockerfile: ./ui-webapp/dockerfile
+    volumes:
+      - logs:/phoenix/logs
+    environment:
+      - COMPONENT_CLASS=ui-webapp
+    ports:
+      - 8081:80
+
+
+##### Test Services #####
+#
+  reader-local:
+    build:
+      context: .
+      dockerfile: ./reader/dockerfile
+    privileged: true
+    volumes:
+      - logs:/phoenix/logs
+      - ${HOST_PHOENIX_HOME}/images:/images
+      - /dev:/dev
+    device_cgroup_rules:
+      - 'c *:* rmw'
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - MOCK_READER=${MOCK_READER}
+      - COMPONENT_CLASS=analyzer
+      - HOST_PHOENIX_HOME=${PHOENIX_HOME}
+
+  db-ui:
+    image: mongo-express
+    environment:
+      - ME_CONFIG_MONGODB_SERVER=localhost
+    network_mode: host
+      #ports:
+      #- 8081:8081
+
+  test-bench:
+    build:
+      context: .
+      dockerfile: ./test-bench/dockerfile
+    volumes:
+      # If you ever intend to launch this from another container,
+      # set HOST_PHOENIX_HOME in that container and change these
+      # references to HOST_PHOENIX_HOME
+      - logs:/phoenix/logs
+      - testbenchstuff:/testbenchstuff
+      - ${PHOENIX_HOME}/images:/phoenix/images
+      - ${PHOENIX_HOME}/test-data-input:/phoenix/test-data-input
+      - ${PHOENIX_HOME}/test-data-output:/phoenix/test-data-output
+      - ${PHOENIX_HOME}/test-data:/phoenix/test-data
+      # Run Docker commands from inside container
+      - //var/run/docker.sock://var/run/docker.sock
+    environment:
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_PATH=${DB_PATH}
+      - HOST_PHOENIX_HOME=${PHOENIX_HOME}
+      - COMPONENT_CLASS=test-bench
+    # By default this container will run all tests
+    # If you only want it to run a single test,
+    # uncomment this line and modify to match
+    # the single test you would like to run.
+    #command: ["--name","common.artifactCodec.toFromUINT16Tiff.py"]
+    #command: ["--name","common.artifactCodec.toFrom32BitTiff.py"]
+    #command: ["--name","common.artifactCodec.toFromTiff.py"]
+    #command: ["--name","db.getAllWithFilters.py"]
+    #command: ["--name","db.getAllAndSubscribe2.py"]
+    command: ["--name","db.readerLifecycle.py"]
+    #command: ["--name","reader.collectsImage.py"]
+    #command: ["--name","analyzer.pArrayFluoro.py"]
+    #command: ["--name","api.handlesManyWebsocketConnections.py"]

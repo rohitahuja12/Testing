@@ -1,0 +1,13 @@
+data/
+logs/
+images/
+*.zip
+**/__pycache__/*
+test-data
+.terraform*
+notes.txt
+.DS_Store
+# vscode
+.vscode/
+.vscode/*
+.idea/*

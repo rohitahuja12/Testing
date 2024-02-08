@@ -1,0 +1,74 @@
+[
+	{
+		"name": "controller_stage",
+		"cmd": "python3 reader/svc_controller_stage/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "controller_camera",
+		"cmd": "python3 reader/svc_controller_camera/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "controller_board",
+		"cmd": "python3 reader/svc_controller_board/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "controller_barcodereader",
+		"cmd": "python3 reader/svc_controller_barcode_reader/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "locations",
+		"cmd": "python3 reader/svc_locations/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "reader_task_worker",
+		"cmd": "python3 reader/svc_reader_task_worker/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "button_handler",
+		"cmd": "python3 reader/svc_button_handler/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "cloud_command",
+		"cmd": "python3 reader/svc_cloud_command/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "failsafe",
+		"cmd": "python3 reader/svc_failsafe/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "task_results_sync",
+		"cmd": "python3 reader/svc_task_results_sync/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "reader_cache",
+		"cmd": "python3 reader/svc_reader_cache/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "statuslight_lighter",
+		"cmd": "python3 reader/svc_statuslight_lighter/main.py",
+		"keepAlive": true,
+		"run": true
+	}
+]

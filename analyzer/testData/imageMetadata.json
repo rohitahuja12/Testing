@@ -1,0 +1,36 @@
+{
+  "metadata": [
+   {
+    "time": "2023-10-23T20:11:35.055630",
+    "fovSizeXUm": 4400,
+    "fovSizeYUm": 4400,
+    "zStagePositionUm": 900,
+    "imageName": "A1",
+    "spots": [
+     {"analyte": "POS", "row": 1, "column": 1, "x_px": 700, "y_px": 700},
+     {"analyte": "IL-1a", "row": 1, "column": 3, "x_px": 1700, "y_px": 700},
+     {"analyte": "IL-6", "row": 6, "column": 6, "x_px": 3200, "y_px": 3200},
+     {"analyte": "IL-1a", "row": 3, "column": 3, "x_px": 1700, "y_px": 1700},
+     {"analyte": "IL-1a", "row": 4, "column": 5, "x_px": 2700, "y_px": 2200},
+     {"analyte": "IL-6", "row": 7, "column": 4, "x_px": 2200, "y_px": 3700},
+     {"analyte": "IL-6", "row": 5, "column": 2, "x_px": 1200, "y_px": 2700}
+    ]
+   },
+    {
+    "time": "2023-10-23T20:11:35.055630",
+    "fovSizeXUm": 4400,
+    "fovSizeYUm": 4400,
+    "zStagePositionUm": 900,
+    "imageName": "A2",
+    "spots": [
+     {"analyte": "POS", "row": 1, "column": 1, "x_px": 700, "y_px": 700},
+     {"analyte": "IL-1a", "row": 1, "column": 3, "x_px": 1700, "y_px": 700},
+     {"analyte": "IL-6", "row": 6, "column": 6, "x_px": 3200, "y_px": 3200},
+     {"analyte": "IL-1a", "row": 3, "column": 3, "x_px": 1700, "y_px": 1700},
+     {"analyte": "IL-1a", "row": 4, "column": 5, "x_px": 2700, "y_px": 2200},
+     {"analyte": "IL-6", "row": 7, "column": 4, "x_px": 2200, "y_px": 3700},
+     {"analyte": "IL-6", "row": 5, "column": 2, "x_px": 1200, "y_px": 2700}
+    ]
+   }
+   ]
+}

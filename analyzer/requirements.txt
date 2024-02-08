@@ -1,0 +1,16 @@
+aiostream
+asyncio
+dataclasses-json
+imageio
+jsonschema
+matplotlib
+more_itertools
+mypy
+opencv-python
+pandas
+python-jose
+rel
+requests
+scikit-image
+scipy
+websockets

@@ -1,0 +1,86 @@
+@font-face {
+  font-family: forma-regular;
+  src: url('../fonts/forma_DJR/forma\ djr\ deck-regular.woff2')
+}
+
+@media (max-width: 3000px) {
+  .logo>img {
+    max-width: 20%;
+    min-width: 200px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 10vw;
+    padding-top: 50px;
+  }
+
+  .bb-background {
+    background: url('./../images/teaser_website@2x.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .empower-line {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    /* use forma font */
+    font-family: forma-regular;
+    font-size: 55px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  .empower-line>p {
+    color: grey;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo>img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 30%;
+    padding-left: 10vw;
+    padding-top: 50px;
+  }
+
+  .bb-background {
+    background: url('./../images/mobile_bg.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .empower-line {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+    /* use forma font */
+    font-family: forma-regular;
+    font-size: 55px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.2;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 20px;
+  }
+
+  .empower-line>p {
+    color: grey;
+    font-size: 14px;
+  }
+
+}

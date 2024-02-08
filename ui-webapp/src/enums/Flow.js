@@ -1,0 +1,7 @@
+export const Flow = Object.freeze({
+    MANAGE_ANALYSIS_TEMPLATES: 'MANAGE_ANALYSIS_TEMPLATES',
+    NONE: 'NONE',
+    ANALYZE: 'ANALYZE', 
+    SCAN: 'SCAN',
+    SCAN_TO_ANALYSIS: 'SCAN_TO_ANALYSIS',
+});

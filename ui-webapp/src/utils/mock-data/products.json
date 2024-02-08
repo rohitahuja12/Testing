@@ -1,0 +1,77 @@
+[
+    {
+        "_id": "63120b607180ad4d37775e48",
+        "concentrationUnit": "pg/ml",
+        "createdOn": "2022-09-02T13:55:44.649936",
+        "exposures": [
+            2500
+        ],
+        "productDescription": {},
+        "productName": "Inflammatory_Kit_12P_062822",
+        "recommendedInitialConcentrations": {
+            "IFN-gamma": 2000,
+            "IL-10": 600,
+            "IL-13": 600,
+            "IL-1alpha": 200,
+            "IL-1beta": 2000,
+            "IL-2": 600,
+            "IL-4": 30,
+            "IL-5": 600,
+            "IL-6": 200,
+            "IL-8": 600,
+            "MCP-1": 2000,
+            "TNF-alpha": 2000
+        },
+        "recommendedStandardDilutionFactor": 1
+    },
+    {
+        "_id": "631a7141bf2ade8f964a6f38",
+        "concentrationUnit": "pg/ml",
+        "createdOn": "2022-09-08T22:48:33.060824",
+        "exposures": [
+            2500
+        ],
+        "productDescription": {},
+        "productName": "Emilios_Infla_Kit",
+        "recommendedInitialConcentrations": {
+            "IFN-gamma": 2000,
+            "IL-10": 600,
+            "IL-13": 600,
+            "IL-1alpha": 200,
+            "IL-1beta": 2000,
+            "IL-2": 600,
+            "IL-4": 30,
+            "IL-5": 600,
+            "IL-6": 200,
+            "IL-8": 600,
+            "MCP-1": 2000,
+            "TNF-alpha": 2000
+        },
+        "recommendedStandardDilutionFactor": 1
+    },
+    {
+        "_id": "631a7148bf2ade8f964a6f39",
+        "concentrationUnit": "pg/ml",
+        "createdOn": "2022-09-08T22:48:39.876333",
+        "exposures": [
+            2500
+        ],
+        "productDescription": {},
+        "productName": "Emilios_Infla_Kit",
+        "recommendedInitialConcentrations": {
+            "IFN-gamma": 2000,
+            "IL-10": 600,
+            "IL-13": 600,
+            "IL-1alpha": 200,
+            "IL-1beta": 2000,
+            "IL-2": 600,
+            "IL-4": 30,
+            "IL-5": 600,
+            "IL-6": 200,
+            "IL-8": 600,
+            "MCP-1": 2000,
+            "TNF-alpha": 2000
+        },
+        "recommendedStandardDilutionFactor": 1
+    }
+]

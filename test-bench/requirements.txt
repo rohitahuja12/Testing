@@ -1,0 +1,10 @@
+requests
+numpy
+pillow
+websockets
+rel
+aiostream
+opencv-python
+imageio
+scipy
+dotmap

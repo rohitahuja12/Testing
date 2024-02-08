@@ -1,0 +1,41 @@
+FROM python:3.9-slim-buster
+
+RUN apt-get update && apt-get -y dist-upgrade
+
+RUN apt-get -y install \
+	apt-utils \
+    build-essential \
+    gcc \
+	ffmpeg \
+	libsm6 \
+	libxext6
+
+# install docker
+RUN apt-get update
+RUN apt-get install curl -y
+RUN apt-get install docker.io -y
+RUN docker --version
+RUN curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+&& chmod +x /usr/local/bin/docker-compose
+
+# install node
+RUN apt-get -y install gnupg
+RUN curl -sL https://deb.nodesource.com/setup_17.x  | bash -
+RUN apt-get -y install nodejs
+
+COPY test-bench/requirements.txt phoenix/test-bench/requirements.txt
+RUN pip install --no-cache-dir -r phoenix/test-bench/requirements.txt
+
+COPY docker-compose.yml phoenix/docker-compose.yml
+COPY test-bench phoenix/test-bench
+COPY common phoenix/common
+COPY analyzer phoenix/analyzer
+
+WORKDIR phoenix
+RUN mkdir logs
+
+ENV COMPONENT_CLASS=test-bench
+ENV PHOENIX_HOME=/phoenix
+
+ENTRYPOINT ["bash", "test-bench/dockerstartup.sh"]
+CMD ["--all"]

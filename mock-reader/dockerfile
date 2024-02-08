@@ -1,0 +1,14 @@
+FROM public.ecr.aws/q3t3c9n8/auragent-reader-analyzer-partial-public:latest
+
+COPY mock-reader/requirements.txt phoenix/mock-reader/requirements.txt
+RUN pip install --no-cache-dir -r phoenix/mock-reader/requirements.txt
+
+COPY mock-reader/src phoenix/mock-reader/src
+COPY common phoenix/common
+RUN mkdir phoenix/logs
+
+ENV COMPONENT_CLASS=mock-reader
+ENV PHOENIX_HOME=/phoenix
+WORKDIR phoenix
+
+CMD ["python", "./mock-reader/src/main.py"]

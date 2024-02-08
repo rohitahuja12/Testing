@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+
+  lfa-reader:
+    image: 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_lfa_reader:dev
+    platform: linux/arm64
+    volumes:
+      - /dev:/dev
+      - /run/udev/control:/run/udev/control
+      - /run/udev:/run/udev
+    environment:
+      - CONTROLLER_CAMERA_REQUEST_TRANSPORT=tcp://0.0.0.0:8000
+      - CONTROLLER_CAMERA_IMAGE_STREAM_TRANSPORT=tcp://0.0.0.0:8001
+      - CONTROLLER_LASER_REQUEST_TRANSPORT=tcp://0.0.0.0:8100
+      - CONTROLLER_BARCODEREADER_REQUEST_TRANSPORT=tcp://0.0.0.0:8150
+    privileged: true
+    network_mode: host

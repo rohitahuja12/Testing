@@ -1,0 +1,17 @@
+REQUIREMENTS
+- The reader control software should run on an inexpensive machine. (<$500)
+- While the reader turns on the screen should display 'loading' and accept no inputs.
+- When there is a component failure of hardware or software it should be expressed on the screen.
+- The reader should support 2 modes of operation, production and development.
+- In production mode, hardware should be accessible from the embedded machine only.
+- In development mode, hardware should be accessible over the local network.
+- When the reader is ready (all components functional, not busy, and no plate is present) the screen should display 'eject' button.
+- When the tray is ejected, the screen should display 'retract' button.
+- When the tray is ejected, the reader should know if a plate is placed in the nest.
+- When a plate is placed in the nest, an indicator should be shown on the screen.
+- When the tray is retracted and a plate is present, the reader should automatically attempt to identify that plate.
+- A failure to identify a plate should produce a warning on the screen.
+- The reader should allow unidentified plates to b we scanned.
+- When a plate is identified the user should be able to scan the plate.
+- When a scan is running the screen should allow the scan to be aborted.
+

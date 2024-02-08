@@ -1,0 +1,48 @@
+#to run with logging output during build:  docker compose build --progress plain analyzer
+FROM python:3.10-slim-buster
+
+# Install any needed packages specified in requirements.txt
+RUN apt-get update && apt-get -y dist-upgrade
+
+RUN apt-get -y install \
+	apt-utils \
+    build-essential \
+    gcc \
+	ffmpeg \
+	libsm6 \
+	libxext6
+
+COPY analyzer/requirements.txt phoenix/analyzer/requirements.txt
+RUN python -m pip install --upgrade pip
+RUN pip install -r phoenix/analyzer/requirements.txt
+
+#FROM public.ecr.aws/q3t3c9n8/auragent-reader-analyzer-partial-public:latest
+ARG noTest
+
+COPY analyzer/src phoenix/analyzer/src
+COPY common phoenix/common
+COPY analyzer/testData phoenix/analyzer/testData
+
+COPY tests phoenix/tests
+RUN mkdir phoenix/test-results
+RUN mkdir phoenix/logs
+
+RUN pip install --no-cache-dir -r phoenix/common/requirements.txt
+ENV COMPONENT_CLASS=analyzer
+ENV PHOENIX_HOME=/phoenix
+
+WORKDIR phoenix
+
+#old unit tests
+#to skip tests, add to docker compose build:  --build-arg noTest=true
+RUN if [ "$noTest" != "true" ] ; then \
+    pip install pytest; \
+    pytest -o junit_suite_name="Build Tests" --junitxml "test-results/junit-report-common.xml" "./common/" ; \
+    pytest -o junit_suite_name="Build Tests" --junitxml "test-results/junit-report-protocols.xml" "./analyzer/src/protocols/" ; \
+    fi
+
+RUN rm -r /phoenix/analyzer/testData
+RUN rm -r /phoenix/test-results
+
+ENTRYPOINT ["python", "./analyzer/src/main.py"]
+CMD ["--db"]

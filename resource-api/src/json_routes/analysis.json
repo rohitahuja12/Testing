@@ -1,0 +1,60 @@
+{
+	"singularEntity": "analysis",
+	"pluralEntity": "analyses",
+	"hasHeartbeat": false,
+	"onCreate": [
+		"lambda x: {**x, 'status': x.get('status', 'QUEUED')}"
+	],
+	"hasAttachments": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "An analysis",
+		"properties": {
+			"protocol": {
+				"type": "string",
+				"description": "The procotol to be used for this analysis"
+			},
+			"protocolArgs": {
+				"type": "object",
+				"description": "The arguments for this protocol."
+			},
+			"name": {
+				"type": "string",
+				"description": "A user-provided name for the scan"
+			},
+			"scanId": {
+				"type": "string",
+				"description": "ID of the Scan which should be analyzed"
+			},
+			"status": {
+				"type": "string",
+				"description": "Current status of the analysis",
+				"enum": [
+					"QUEUED",
+					"RUNNING",
+					"COMPLETE",
+					"ERROR"
+				]
+			},
+			"validationMode": {
+				"type": "boolean",
+				"description": "Set to true to produce extra diagnostic outputs useful for verification. Defaults to false."
+			},
+			"results": {
+				"type": "object",
+				"description": "JSON blob representing results of analysis"
+			},
+			"errors": {
+				"type": "array",
+				"description": "List of errors associated with this analysis",
+				"items": { "type": "string" }
+			}
+		},
+		"required": [
+			"protocol",
+			"name",
+			"scanId",
+			"status"
+		]
+	}
+}

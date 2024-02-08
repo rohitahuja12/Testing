@@ -1,0 +1,19 @@
+{
+  "name": "user-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:dev": "aws s3 cp \"./\" s3://phoenix-cognito-lambda-bucket-dev/ --recursive",
+    "buildDeploy:dev": "npm run zip && aws lambda update-function-code --function-name  arn:aws:lambda:us-east-2:046456031965:function:cognitoManagementLambda --zip-file fileb://index.zip",
+    "zip": "zip -vr index.zip ./ -x \"*.DS_Store\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-jwt-verify": "^4.0.0",
+    "aws-sdk": "^2.1487.0",
+    "dotenv": "^16.3.1"
+  }
+}

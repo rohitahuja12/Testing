@@ -1,0 +1,191 @@
+{
+  "productId": "kit1",
+  "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+  "hasStandards": true,
+  "dilutionFactor": 5,
+  "initialConcentrations": {
+    "anlt1": 1000,
+    "anlt2": 1000,
+    "anlt3": 1000,
+    "anlt4": 1000
+  },
+  "initialConcentrationUnits": "pg/ml",
+  "wells": [
+    {
+      "label": "std1",
+      "row": "A",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 1000,
+      "replicateGroup": 1,
+      "replicateId": 1
+    },
+    {
+      "label": "std2",
+      "row": "B",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 200,
+      "replicateGroup": 1,
+      "replicateId": 2
+    },
+    {
+      "label": "std3",
+      "row": "C",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 40,
+      "replicateGroup": 1,
+      "replicateId": 3
+    },
+    {
+      "label": "std4",
+      "row": "D",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 8,
+      "replicateGroup": 1,
+      "replicateId": 4
+    },
+    {
+      "label": "std5",
+      "row": "E",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 1.6,
+      "replicateGroup": 1,
+      "replicateId": 5
+    },
+    {
+      "label": "std6",
+      "row": "F",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 0.32,
+      "replicateGroup": 1,
+      "replicateId": 6
+    },
+    {
+      "label": "std7",
+      "row": "G",
+      "column": "1",
+      "type": "standard",
+      "knownConcentration": 0.064,
+      "replicateGroup": 1,
+      "replicateId": 7
+    },
+    {
+      "label": "blank",
+      "row": "H",
+      "column": "1",
+      "type": "blank",
+      "knownConcentration": 1e-20,
+      "replicateGroup": 1,
+      "replicateId": 8
+    },
+    {
+      "label": "std1",
+      "row": "A",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 1000,
+      "replicateGroup": 2,
+      "replicateId": 1
+    },
+    {
+      "label": "std2",
+      "row": "B",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 200,
+      "replicateGroup": 2,
+      "replicateId": 2
+    },
+    {
+      "label": "std3",
+      "row": "C",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 40,
+      "replicateGroup": 2,
+      "replicateId": 3
+    },
+    {
+      "label": "std4",
+      "row": "D",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 8,
+      "replicateGroup": 2,
+      "replicateId": 4
+    },
+    {
+      "label": "std5",
+      "row": "E",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 1.6,
+      "replicateGroup": 2,
+      "replicateId": 5
+    },
+    {
+      "label": "std6",
+      "row": "F",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 0.32,
+      "replicateGroup": 2,
+      "replicateId": 6
+    },
+    {
+      "label": "std7",
+      "row": "G",
+      "column": "2",
+      "type": "standard",
+      "knownConcentration": 0.064,
+      "replicateGroup": 2,
+      "replicateId": 7
+    },
+    {
+      "label": "blank",
+      "row": "H",
+      "column": "2",
+      "type": "blank",
+      "knownConcentration": 1e-20,
+      "replicateGroup": 2,
+      "replicateId": 8
+    },
+    {
+      "label": "patient-123",
+      "row": "A",
+      "column": "3",
+      "type": "unknown",
+      "replicateGroup": 1,
+      "replicateId": 1
+    },
+    {
+      "label": "patient-123",
+      "row": "A",
+      "column": "4",
+      "type": "unknown",
+      "replicateGroup": 1,
+      "replicateId": 2
+    },
+    {
+      "label": "patient-456",
+      "row": "B",
+      "column": "3",
+      "type": "unknown",
+      "replicateGroup": 1,
+      "replicateId": 2
+    },
+    {
+      "label": "patient-456",
+      "row": "B",
+      "column": "4",
+      "type": "unknown",
+      "replicateGroup": 1,
+      "replicateId": 2
+    }
+  ]
+}

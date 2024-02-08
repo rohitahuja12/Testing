@@ -1,0 +1,102 @@
+import cv2
+import numpy as np
+import itertools
+from copy import deepcopy
+import functools
+import log
+logger = log.getLogger("reader_task_worker.hdr")
+
+'''
+kwargs:
+    mergeType = ['sum','debevec','robertson','mertens']
+    preMergeTransform is a function that can be applied
+        to each image before they are merged
+'''
+def hdrWithMetadata(expose, exposurems, **kwargs):
+
+    metadata = {
+        "exposures": []
+    }
+    imgs = []
+
+    # rate at which exposures become shorter
+    # where x is the index of the shot 
+    getExposureDuration = lambda x: int(exposurems/pow(2,x))
+    # getExposureDuration = lambda x: int(exposurems-(100*x))
+
+    # The decreasing series of exposure durations
+    exposureDurations = (getExposureDuration(x) for x in itertools.count(1))
+
+    # How many ms must still be exposed to fill out
+    # the desired exposure duration
+    remainingExposure = exposurems
+
+    # Exposure durations will decrease until one is found
+    # which meets the criteria for 'non-saturated'.
+    # This is the duration which first met this criteria.
+    nonsaturatingExposure = 0
+
+    # The pixel value, over which, a pixel will be considered
+    # to be saturated.
+    satValue = round(0.50 * np.iinfo(np.uint16).max)
+<<<<<<< HEAD
+
+=======
+>>>>>>> dev
+    for exDuration in exposureDurations:
+
+        metadata['exposures'].append(exDuration)
+        img = expose(exDuration)
+        imgs += [(img, exDuration)]
+
+        totalPxls = img.shape[0] * img.shape[1]
+        saturatedPxlCnt = np.count_nonzero(img >= satValue)
+
+        remainingExposure -= exDuration
+        if saturatedPxlCnt == 0:
+            nonsaturatingExposure = exDuration
+            break
+    
+    # expose remainder
+    metadata['exposures'].append(remainingExposure)
+    # logger.info(f'HDR exposures {metadata["exposures"]}')
+    img = expose(remainingExposure)
+    imgs += [(img,exDuration)]
+
+    xform = kwargs.get('preMergeTransform', None)
+    if xform:
+        imgs = [(xform(i),dur) for (i,dur) in imgs]
+
+    mergeType = kwargs.get('mergeType','sum')
+    if mergeType == 'sum':
+        hdr_float32_stack = [(i.copy().astype(np.float32),dur) for (i,dur) in imgs]
+        width,height = hdr_float32_stack[0][0].shape
+        # result image to populate with merged pixel values
+        result = np.zeros((width, height), dtype=np.float32)
+        for x in range(width):
+            for y in range(height):
+                # all the values for a pixel from the different exposures
+                pxls = [(im[x,y],dur) for im,dur in hdr_float32_stack]
+                saturated_values = [val for (val, dur) in pxls if val >= satValue]               
+                saturated_durations = [dur for (val, dur) in pxls if val >= satValue]
+                nonsaturated_values = [val for (val, dur) in pxls if val < satValue]               
+                nonsaturated_durations = [dur for (val, dur) in pxls if val < satValue]
+
+                # logger.info(f'pixels for ({x},{y}): {pxls}')
+
+                nonsaturated_intensity_per_ms = sum(nonsaturated_values) / sum(nonsaturated_durations)
+                total_duration = sum(saturated_durations) + sum(nonsaturated_durations)
+                # if total_duration != exposurems:
+                    # raise Exception(f"Computed exposure duration does not match prescribed. {total_duration} vs {exposurems}")
+
+                result_px = nonsaturated_intensity_per_ms * total_duration
+                result[x,y] = result_px
+                # if len(saturated_values)>4:
+                    # logger.info(f'x,y={x,y}, i_per_ms={nonsaturated_intensity_per_ms}, total_duration={total_duration}, result={result_px}')
+
+    return result#, metadata
+
+def hdr(expose, exposurems, **kwargs):
+    result = hdrWithMetadata(expose, exposurems, **kwargs)
+    return result
+

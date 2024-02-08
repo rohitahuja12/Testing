@@ -1,0 +1,1347 @@
+{
+  "_id": "643589c118f4608414de3e44",
+  "createdOn": "2023-04-11T16:24:33.795781",
+  "exposures": [
+    2500
+  ],
+  "features": {
+    "A01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 113270
+    },
+    "A02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 104270
+    },
+    "A03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 95270
+    },
+    "A04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 86270
+    },
+    "A05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 77270
+    },
+    "A06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 68270
+    },
+    "A07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 59270
+    },
+    "A08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 50270
+    },
+    "A09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 41270
+    },
+    "A10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 32270
+    },
+    "A11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 23270
+    },
+    "A12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 11050,
+      "y": 14270
+    },
+    "B01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 113270
+    },
+    "B02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 104270
+    },
+    "B03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 95270
+    },
+    "B04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 86270
+    },
+    "B05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 77270
+    },
+    "B06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 68270
+    },
+    "B07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 59270
+    },
+    "B08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 50270
+    },
+    "B09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 41270
+    },
+    "B10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 32270
+    },
+    "B11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 23270
+    },
+    "B12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 20050,
+      "y": 14270
+    },
+    "C01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 113270
+    },
+    "C02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 104270
+    },
+    "C03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 95270
+    },
+    "C04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 86270
+    },
+    "C05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 77270
+    },
+    "C06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 68270
+    },
+    "C07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 59270
+    },
+    "C08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 50270
+    },
+    "C09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 41270
+    },
+    "C10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 32270
+    },
+    "C11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 23270
+    },
+    "C12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 29050,
+      "y": 14270
+    },
+    "D01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 113270
+    },
+    "D02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 104270
+    },
+    "D03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 95270
+    },
+    "D04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 86270
+    },
+    "D05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 77270
+    },
+    "D06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 68270
+    },
+    "D07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 59270
+    },
+    "D08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 50270
+    },
+    "D09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 41270
+    },
+    "D10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 32270
+    },
+    "D11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 23270
+    },
+    "D12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 38050,
+      "y": 14270
+    },
+    "E01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 113270
+    },
+    "E02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 104270
+    },
+    "E03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 95270
+    },
+    "E04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 86270
+    },
+    "E05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 77270
+    },
+    "E06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 68270
+    },
+    "E07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 59270
+    },
+    "E08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 50270
+    },
+    "E09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 41270
+    },
+    "E10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 32270
+    },
+    "E11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 23270
+    },
+    "E12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 47050,
+      "y": 14270
+    },
+    "F01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 113270
+    },
+    "F02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 104270
+    },
+    "F03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 95270
+    },
+    "F04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 86270
+    },
+    "F05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 77270
+    },
+    "F06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 68270
+    },
+    "F07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 59270
+    },
+    "F08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 50270
+    },
+    "F09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 41270
+    },
+    "F10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 32270
+    },
+    "F11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 23270
+    },
+    "F12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 56050,
+      "y": 14270
+    },
+    "G01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 113270
+    },
+    "G02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 104270
+    },
+    "G03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 95270
+    },
+    "G04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 86270
+    },
+    "G05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 77270
+    },
+    "G06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 68270
+    },
+    "G07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 59270
+    },
+    "G08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 50270
+    },
+    "G09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 41270
+    },
+    "G10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 32270
+    },
+    "G11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 23270
+    },
+    "G12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 65050,
+      "y": 14270
+    },
+    "H01": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 113270
+    },
+    "H02": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 104270
+    },
+    "H03": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 95270
+    },
+    "H04": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 86270
+    },
+    "H05": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 77270
+    },
+    "H06": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 68270
+    },
+    "H07": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 59270
+    },
+    "H08": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 50270
+    },
+    "H09": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 41270
+    },
+    "H10": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 32270
+    },
+    "H11": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 23270
+    },
+    "H12": {
+      "features": {
+        "microArray": {
+          "$ref": "#/relativeFeatures/microArray"
+        }
+      },
+      "x": 74050,
+      "y": 14270
+    }
+  },
+  "lastModified": "2023-04-11T16:24:33.795781",
+  "productDescription": {
+    "description": "Inflammator Marker Kit, V2"
+  },
+  "productId": "V2_Inflammatory_Kit_12P_061622_universal",
+  "productName": "V2_Inflammatory_Kit_12P_061622_universal",
+  "productSchemaVersion": 1,
+  "recommendedInitialConcentrations": {
+    "IFN-gamma": 2000,
+    "IL-10": 600,
+    "IL-13": 600,
+    "IL-1alpha": 200,
+    "IL-1beta": 2000,
+    "IL-2": 600,
+    "IL-4": 30,
+    "IL-5": 600,
+    "IL-6": 200,
+    "IL-8": 600,
+    "MCP-1": 2000,
+    "TNF-alpha": 2000
+  },
+  "recommendedStandardDilutionFactor": 3,
+  "relativeFeatures": {
+    "microArray": {
+      "features": {
+        "BLANK_1_2": {
+          "attrs": {
+            "analyte": "BLANK",
+            "col": 2,
+            "row": 1
+          },
+          "x": 500,
+          "y": 0
+        },
+        "BLANK_2_1": {
+          "attrs": {
+            "analyte": "BLANK",
+            "col": 1,
+            "row": 2
+          },
+          "x": 0,
+          "y": 500
+        },
+        "BLANK_2_2": {
+          "attrs": {
+            "analyte": "BLANK",
+            "col": 2,
+            "row": 2
+          },
+          "x": 500,
+          "y": 500
+        },
+        "IFN_g_3_6": {
+          "attrs": {
+            "analyte": "IFN-g",
+            "col": 6,
+            "row": 3
+          },
+          "x": 2500,
+          "y": 1000
+        },
+        "IFN_g_5_3": {
+          "attrs": {
+            "analyte": "IFN-g",
+            "col": 3,
+            "row": 5
+          },
+          "x": 1000,
+          "y": 2000
+        },
+        "IFN_g_6_7": {
+          "attrs": {
+            "analyte": "IFN-g",
+            "col": 7,
+            "row": 6
+          },
+          "x": 3000,
+          "y": 2500
+        },
+        "IL_13_3_5": {
+          "attrs": {
+            "analyte": "IL-13",
+            "col": 5,
+            "row": 3
+          },
+          "x": 2000,
+          "y": 1000
+        },
+        "IL_13_5_2": {
+          "attrs": {
+            "analyte": "IL-13",
+            "col": 2,
+            "row": 5
+          },
+          "x": 500,
+          "y": 2000
+        },
+        "IL_13_6_6": {
+          "attrs": {
+            "analyte": "IL-13",
+            "col": 6,
+            "row": 6
+          },
+          "x": 2500,
+          "y": 2500
+        },
+        "IL_1B_2_6": {
+          "attrs": {
+            "analyte": "IL-1B",
+            "col": 6,
+            "row": 2
+          },
+          "x": 2500,
+          "y": 500
+        },
+        "IL_1B_4_3": {
+          "attrs": {
+            "analyte": "IL-1B",
+            "col": 3,
+            "row": 4
+          },
+          "x": 1000,
+          "y": 1500
+        },
+        "IL_1B_5_7": {
+          "attrs": {
+            "analyte": "IL-1B",
+            "col": 7,
+            "row": 5
+          },
+          "x": 3000,
+          "y": 2000
+        },
+        "IL_1B_7_4": {
+          "attrs": {
+            "analyte": "IL-1B",
+            "col": 4,
+            "row": 7
+          },
+          "x": 1500,
+          "y": 3000
+        },
+        "IL_1a_2_5": {
+          "attrs": {
+            "analyte": "IL-1a",
+            "col": 5,
+            "row": 2
+          },
+          "x": 2000,
+          "y": 500
+        },
+        "IL_1a_4_2": {
+          "attrs": {
+            "analyte": "IL-1a",
+            "col": 2,
+            "row": 4
+          },
+          "x": 500,
+          "y": 1500
+        },
+        "IL_1a_5_6": {
+          "attrs": {
+            "analyte": "IL-1a",
+            "col": 6,
+            "row": 5
+          },
+          "x": 2500,
+          "y": 2000
+        },
+        "IL_1a_7_3": {
+          "attrs": {
+            "analyte": "IL-1a",
+            "col": 3,
+            "row": 7
+          },
+          "x": 1000,
+          "y": 3000
+        },
+        "IL_2_1_3": {
+          "attrs": {
+            "analyte": "IL-2",
+            "col": 3,
+            "row": 1
+          },
+          "x": 1000,
+          "y": 0
+        },
+        "IL_2_2_7": {
+          "attrs": {
+            "analyte": "IL-2",
+            "col": 7,
+            "row": 2
+          },
+          "x": 3000,
+          "y": 500
+        },
+        "IL_2_4_4": {
+          "attrs": {
+            "analyte": "IL-2",
+            "col": 4,
+            "row": 4
+          },
+          "x": 1500,
+          "y": 1500
+        },
+        "IL_2_6_1": {
+          "attrs": {
+            "analyte": "IL-2",
+            "col": 1,
+            "row": 6
+          },
+          "x": 0,
+          "y": 2500
+        },
+        "IL_2_7_5": {
+          "attrs": {
+            "analyte": "IL-2",
+            "col": 5,
+            "row": 7
+          },
+          "x": 2000,
+          "y": 3000
+        },
+        "IL_4_1_4": {
+          "attrs": {
+            "analyte": "IL-4",
+            "col": 4,
+            "row": 1
+          },
+          "x": 1500,
+          "y": 0
+        },
+        "IL_4_3_1": {
+          "attrs": {
+            "analyte": "IL-4",
+            "col": 1,
+            "row": 3
+          },
+          "x": 0,
+          "y": 1000
+        },
+        "IL_4_4_5": {
+          "attrs": {
+            "analyte": "IL-4",
+            "col": 5,
+            "row": 4
+          },
+          "x": 2000,
+          "y": 1500
+        },
+        "IL_4_6_2": {
+          "attrs": {
+            "analyte": "IL-4",
+            "col": 2,
+            "row": 6
+          },
+          "x": 500,
+          "y": 2500
+        },
+        "IL_4_7_6": {
+          "attrs": {
+            "analyte": "IL-4",
+            "col": 6,
+            "row": 7
+          },
+          "x": 2500,
+          "y": 3000
+        },
+        "IL_5_1_5": {
+          "attrs": {
+            "analyte": "IL-5",
+            "col": 5,
+            "row": 1
+          },
+          "x": 2000,
+          "y": 0
+        },
+        "IL_5_3_2": {
+          "attrs": {
+            "analyte": "IL-5",
+            "col": 2,
+            "row": 3
+          },
+          "x": 500,
+          "y": 1000
+        },
+        "IL_5_4_6": {
+          "attrs": {
+            "analyte": "IL-5",
+            "col": 6,
+            "row": 4
+          },
+          "x": 2500,
+          "y": 1500
+        },
+        "IL_5_6_3": {
+          "attrs": {
+            "analyte": "IL-5",
+            "col": 3,
+            "row": 6
+          },
+          "x": 1000,
+          "y": 2500
+        },
+        "IL_5_7_7": {
+          "attrs": {
+            "analyte": "IL-5",
+            "col": 7,
+            "row": 7
+          },
+          "x": 3000,
+          "y": 3000
+        },
+        "IL_6_1_6": {
+          "attrs": {
+            "analyte": "IL-6",
+            "col": 6,
+            "row": 1
+          },
+          "x": 2500,
+          "y": 0
+        },
+        "IL_6_3_3": {
+          "attrs": {
+            "analyte": "IL-6",
+            "col": 3,
+            "row": 3
+          },
+          "x": 1000,
+          "y": 1000
+        },
+        "IL_6_4_7": {
+          "attrs": {
+            "analyte": "IL-6",
+            "col": 7,
+            "row": 4
+          },
+          "x": 3000,
+          "y": 1500
+        },
+        "IL_6_6_4": {
+          "attrs": {
+            "analyte": "IL-6",
+            "col": 4,
+            "row": 6
+          },
+          "x": 1500,
+          "y": 2500
+        },
+        "IL_8_1_7": {
+          "attrs": {
+            "analyte": "IL-8",
+            "col": 7,
+            "row": 1
+          },
+          "x": 3000,
+          "y": 0
+        },
+        "IL_8_3_4": {
+          "attrs": {
+            "analyte": "IL-8",
+            "col": 4,
+            "row": 3
+          },
+          "x": 1500,
+          "y": 1000
+        },
+        "IL_8_5_1": {
+          "attrs": {
+            "analyte": "IL-8",
+            "col": 1,
+            "row": 5
+          },
+          "x": 0,
+          "y": 2000
+        },
+        "IL_8_6_5": {
+          "attrs": {
+            "analyte": "IL-8",
+            "col": 5,
+            "row": 6
+          },
+          "x": 2000,
+          "y": 2500
+        },
+        "MCP_1_2_3": {
+          "attrs": {
+            "analyte": "MCP-1",
+            "col": 3,
+            "row": 2
+          },
+          "x": 1000,
+          "y": 500
+        },
+        "MCP_1_3_7": {
+          "attrs": {
+            "analyte": "MCP-1",
+            "col": 7,
+            "row": 3
+          },
+          "x": 3000,
+          "y": 1000
+        },
+        "MCP_1_5_4": {
+          "attrs": {
+            "analyte": "MCP-1",
+            "col": 4,
+            "row": 5
+          },
+          "x": 1500,
+          "y": 2000
+        },
+        "MCP_1_7_1": {
+          "attrs": {
+            "analyte": "MCP-1",
+            "col": 1,
+            "row": 7
+          },
+          "x": 0,
+          "y": 3000
+        },
+        "POS_1_1": {
+          "attrs": {
+            "analyte": "POS",
+            "col": 1,
+            "row": 1
+          },
+          "x": 0,
+          "y": 0
+        },
+        "TNF_a_2_4": {
+          "attrs": {
+            "analyte": "TNF-a",
+            "col": 4,
+            "row": 2
+          },
+          "x": 1500,
+          "y": 500
+        },
+        "TNF_a_4_1": {
+          "attrs": {
+            "analyte": "TNF-a",
+            "col": 1,
+            "row": 4
+          },
+          "x": 0,
+          "y": 1500
+        },
+        "TNF_a_5_5": {
+          "attrs": {
+            "analyte": "TNF-a",
+            "col": 5,
+            "row": 5
+          },
+          "x": 2000,
+          "y": 2000
+        },
+        "TNF_a_7_2": {
+          "attrs": {
+            "analyte": "TNF-a",
+            "col": 2,
+            "row": 7
+          },
+          "x": 500,
+          "y": 3000
+        }
+      },
+      "x": -1500,
+      "y": -1500
+    }
+  },
+  "sizeX": 85480,
+  "sizeY": 127760,
+  "units": "microns"
+}

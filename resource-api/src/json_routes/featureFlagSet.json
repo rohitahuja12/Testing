@@ -1,0 +1,40 @@
+{
+	"singularEntity": "featureFlagSet",
+	"pluralEntity": "featureFlagSets",
+	"hasHeartbeat": false,
+	"allowIdOnCreate": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A feature flag set is a collection of features that are enabled or disabled.",
+		"properties": {
+			"features": {
+				"type": "array",
+				"description": "The features that are enabled for this feature flag set.",
+				"items": {
+					"type": "object",
+					"properties": {
+						"feature": {
+							"type": "string"
+						},
+						"enabled": {
+							"type": "boolean"
+						}
+					}
+				}
+			},
+			"name": {
+				"type": "string",
+				"description": "The name of the feature flag set."
+			},
+			"isDefault": {
+				"type": "boolean",
+				"description": "identifies if this is the default feature flag set."
+			}
+		},
+		"required": [
+			"features",
+			"name",
+			"isDefault"
+		]
+	}
+}

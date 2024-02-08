@@ -1,0 +1,32 @@
+{
+	"scripts": {
+		"build": "docker compose build",
+		"test": "docker compose build; docker compose up test-bench",
+
+		"start-api": "docker compose up -d db; docker compose up -d resource-api;",
+		"start-headless": "phx run start-api; docker compose up -d reader; docker compose up -d analyzer;",
+		"start-ui": "npm --prefix ./ui-webapp start",
+		"start": "phx run start-headless; phx run start-ui;",
+		"start-mock": "MOCK_READER=reader123MOCK phx run start",
+		"start-mock-headless": "MOCK_READER=reader123MOCK phx run start-headless",
+
+		"start-embedded-reader-dev": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker compose pull; docker compose up reader-dev",
+		"start-embedded-reader": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker compose pull; docker compose up reader",
+		"start-embedded-reader-dev-local": "docker compose build reader-dev; docker compose up reader-dev",
+
+		"down": "docker compose down",
+		"up": "docker compose up",
+		"stop": "docker compose rm -s -v -f",
+		"logs": "docker compose logs",
+
+		"reload-reader": "phx run stop reader; phx run build reader; phx run start-headless;",
+		"reload-api": "phx run stop resource-api; phx run build resource-api; phx run start-api;",
+		"reload-reader-mock": "phx run stop reader; phx run build reader; phx run start-mock-headless;",
+		"reload-analyzer": "phx run stop analyzer; phx run build analyzer; phx run start-headless;",
+
+		"deploy-reader": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker build -t phoenix_reader -t phx-commit-$(git rev-parse --short HEAD) -f ./reader/dockerfile .; docker tag phoenix_reader:latest 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_reader:dev; docker push 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_reader:dev;",
+		"deploy-lfa-reader": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker build -t phoenix_lfa_reader -t phx-commit-$(git rev-parse --short HEAD) --platform linux/arm64 -f ./lfa-reader/dockerfile .; docker tag phoenix_lfa_reader:latest 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_lfa_reader:dev; docker push 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_lfa_reader:dev;",
+		"deploy-api": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker build -t phoenix_api -t phx-commit-$(git rev-parse --short HEAD) -f ./resource-api/dockerfile .; docker tag phoenix_api:latest 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_api:dev; docker push 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_api:dev",
+		"deploy-analyzer": "aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 046456031965.dkr.ecr.us-east-2.amazonaws.com; docker build -t phoenix_analyzer -t phx-commit-$(git rev-parse --short HEAD) -f ./analyzer/dockerfile .; docker tag phoenix_analyzer:latest 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_analyzer:dev; docker push 046456031965.dkr.ecr.us-east-2.amazonaws.com/phoenix_analyzer:dev"
+	}
+}

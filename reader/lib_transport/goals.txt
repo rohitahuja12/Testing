@@ -1,0 +1,6 @@
+The goals of the new transport layer:
+
+- Allow context to be optionally passed in
+- Obvious servers and clients for different patterns
+- Does not handle Thread/Process spawning. (calling code is responsible)
+- Provide some control over encoding for binary responses, faster message passing

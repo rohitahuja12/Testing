@@ -1,0 +1,20 @@
+[ 
+	{
+		"name": "controller_camera",
+		"cmd": "python3 lfa-reader/svc_controller_camera/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "controller_laser",
+		"cmd": "python3 lfa-reader/svc_controller_laser/main.py",
+		"keepAlive": true,
+		"run": true
+	},
+	{
+		"name": "controller_barcode_reader",
+		"cmd": "python3 lfa-reader/svc_controller_barcode_reader/main.py",
+		"keepAlive": true,
+		"run": true
+	}
+]

@@ -1,0 +1,29 @@
+{
+	"singularEntity": "config",
+	"pluralEntity": "configs",
+	"hasHeartbeat": false,
+	"hasAttachments": false,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A configuration object",
+		"properties": {
+			"entityId": {
+				"type": "string",
+				"description": "The id of the entity to which this configuration applies"
+			},
+			"name": {
+				"type": "string",
+				"description": "A descriptive name for the configuration value"
+			},
+			"value": {
+				"type": "object",
+				"description": "The configuration value. Can be any type."
+			}
+		},
+		"required": [
+			"entityId",
+			"name",
+			"value"
+		]
+	}
+}

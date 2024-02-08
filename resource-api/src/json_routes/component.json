@@ -1,0 +1,32 @@
+{
+	"singularEntity": "component",
+	"pluralEntity": "components",
+	"hasHeartbeat": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A database-connected application component. Can be a docker container or electron app, for example.",
+		"properties": {
+			"class": {
+				"type": "string",
+				"enum": [
+					"reader",
+					"mock-reader",
+					"analyzer",
+					"ui",
+					"test-bench",
+					"test"
+				],
+				"description": "The name of the component"
+			},
+			"lastHeartbeat": {
+				"type": "string",
+				"description": "The 'last seen' ISO timestamp"
+				
+			}
+		},
+		"required": [
+			"class"
+		]
+	}
+}
+

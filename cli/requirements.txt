@@ -1,0 +1,5 @@
+docopt
+pyparsing
+numpy
+PySimpleGUI
+ujson

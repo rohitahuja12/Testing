@@ -1,0 +1,17 @@
+FROM python:3.9-slim-buster
+
+RUN apt-get update 
+RUN apt-get install curl -y
+
+COPY resource-api/requirements.txt phoenix/resource-api/requirements.txt
+RUN pip install -r phoenix/resource-api/requirements.txt
+
+COPY resource-api/src phoenix/resource-api/src
+COPY common phoenix/common
+
+ENV COMPONENT_CLASS=resource-api
+ENV PHOENIX_HOME=/phoenix
+
+WORKDIR phoenix/resource-api/src
+
+CMD ["gunicorn", "--bind", "0.0.0.0:80", "--timeout", "0", "--workers", "4", "--worker-class", "gevent", "app:app"]

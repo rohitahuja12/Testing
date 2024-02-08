@@ -1,0 +1,1 @@
+& python3 "env:PHOENIX_HOME/cli/main.py" @args

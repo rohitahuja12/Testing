@@ -1,0 +1,326 @@
+{
+  "total_rows": 3,
+  "offset": 0,
+  "rows": [
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-8401eda4-db24-4806-bde1-0b80e955de1a-pSpotFluoro-2022-04-12T13:55:13.363Z",
+      "key": [
+        "reader-8401eda4-db24-4806-bde1-0b80e955de1a",
+        "RUNNING"
+      ],
+      "value": {
+        "_id": "scan-reader-8401eda4-db24-4806-bde1-0b80e955de1a-pSpotFluoro-2022-04-12T13:55:13.363Z",
+        "_rev": "2-3d47aed02d0f476274868f9a523c1c61",
+        "name": "My scan!",
+        "readerId": "reader-8401eda4-db24-4806-bde1-0b80e955de1a",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T13:55:13.363Z",
+        "errors": [],
+        "status": "RUNNING",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader123-p-array-2022-04-18T16:57:22.437Z",
+      "key": [
+        "reader123",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader123-p-array-2022-04-18T16:57:22.437Z",
+        "_rev": "1-51998976a397096c5699f67c2c45cfe0",
+        "name": "bob's scan",
+        "readerId": "reader123",
+        "productId": "kit14",
+        "scanProtocol": "p-array",
+        "scanProtocolArgs": {
+          "wells": [
+            {
+              "column": 1,
+              "row": "A"
+            },
+            {
+              "column": 2,
+              "row": "A"
+            },
+            {
+              "column": 3,
+              "row": "A"
+            },
+            {
+              "column": 4,
+              "row": "A"
+            },
+            {
+              "column": 5,
+              "row": "A"
+            },
+            {
+              "column": 6,
+              "row": "A"
+            },
+            {
+              "column": 7,
+              "row": "A"
+            },
+            {
+              "column": 8,
+              "row": "A"
+            },
+            {
+              "column": 9,
+              "row": "A"
+            },
+            {
+              "column": 10,
+              "row": "A"
+            },
+            {
+              "column": 11,
+              "row": "A"
+            }
+          ]
+        },
+        "configIds": [
+          {
+            "name": "readerSettingsLocal",
+            "id": "config-reader123-readerSettingsLocal-2022-03-02T17:14:36Z"
+          },
+          {
+            "name": "productList",
+            "id": "config-reader123-productList-2022-03-02T17:14:36Z"
+          }
+        ],
+        "type": "scan",
+        "createdAt": "2022-04-18T16:57:22.437Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    },
+    {
+      "id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+      "key": [
+        "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "QUEUED"
+      ],
+      "value": {
+        "_id": "scan-reader-0910d67e-87b0-45fa-9ca6-262860116fc0-pSpotFluoro-2022-04-12T14:31:18.985Z",
+        "_rev": "1-bad61b179f3a93746d03bfff992ed29e",
+        "name": "My scan!",
+        "readerId": "reader-0910d67e-87b0-45fa-9ca6-262860116fc0",
+        "scanProtocol": "pSpotFluoro",
+        "scanProtocolArgs": {},
+        "productId": "kit1",
+        "configIds": [],
+        "type": "scan",
+        "createdAt": "2022-04-12T14:31:18.985Z",
+        "errors": [],
+        "status": "QUEUED",
+        "estimatedCompletionTime": "1970-01-01T00:00:00.000Z"
+      }
+    }
+  ]
+}

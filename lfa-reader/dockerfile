@@ -1,0 +1,36 @@
+FROM python:3.11-bullseye
+
+RUN apt-get update -y 
+
+RUN apt-get -y install udev 
+# libusb is needed for ASI cameras
+RUN apt-get -y install libusb-1.0-0-dev
+# gcc is needed for installing RPi.GPIO python package
+RUN apt-get -y install gcc
+
+# Copy requirements files into image
+COPY core/embedded/orchestrator/requirements.txt phoenix/core/embedded/orchestrator/requirements.txt
+COPY core/embedded/hardware_controller/requirements.txt phoenix/core/embedded/hardware_controller/requirements.txt
+COPY core/embedded/usb/requirements.txt phoenix/core/embedded/usb/requirements.txt
+COPY core/codec/requirements.txt phoenix/core/codec/requirements.txt
+COPY lfa-reader/requirements.txt phoenix/lfa-reader/requirements.txt
+
+# Install dependencies
+RUN pip3 install -r phoenix/core/embedded/orchestrator/requirements.txt
+RUN pip3 install -r phoenix/core/embedded/hardware_controller/requirements.txt
+RUN pip3 install -r phoenix/core/codec/requirements.txt
+RUN pip3 install -r phoenix/core/embedded/usb/requirements.txt
+RUN pip3 install -r phoenix/lfa-reader/requirements.txt
+
+# Copy all necessary files into image
+COPY lfa-reader phoenix/lfa-reader
+COPY core phoenix/core
+
+RUN cp phoenix/lfa-reader/svc_controller_camera/libASICamera2.so.1.33 /lib/aarch64-linux-gnu
+RUN cp phoenix/lfa-reader/svc_controller_camera/10-asicamera.rules /lib/udev/rules.d
+
+ENV COMPONENT_CLASS=lfa-reader
+ENV PHOENIX_HOME=/phoenix
+WORKDIR phoenix
+
+CMD python3 core/embedded/orchestrator/main.py lfa-reader/orchestrator-config.json

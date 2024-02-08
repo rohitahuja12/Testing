@@ -1,0 +1,442 @@
+[{
+	"analyte": "POS",
+	"column": 1,
+	"row": 1,
+	"type": "spot",
+	"x": 92,
+	"y": 145,
+	"z": 0,
+	"intensity": 2110.2861
+}, {
+	"analyte": "BLANK",
+	"column": 2,
+	"row": 1,
+	"type": "spot",
+	"x": 209,
+	"y": 145,
+	"z": 0,
+	"intensity": 94.23374
+}, {
+	"analyte": "IL-1alpha",
+	"column": 3,
+	"row": 1,
+	"type": "spot",
+	"x": 325,
+	"y": 145,
+	"z": 0,
+	"intensity": 40178.793
+}, {
+	"analyte": "IL-1beta",
+	"column": 4,
+	"row": 1,
+	"type": "spot",
+	"x": 442,
+	"y": 145,
+	"z": 0,
+	"intensity": 60446.64
+}, {
+	"analyte": "IL-2",
+	"column": 5,
+	"row": 1,
+	"type": "spot",
+	"x": 558,
+	"y": 145,
+	"z": 0,
+	"intensity": 43263.79
+}, {
+	"analyte": "IL-4",
+	"column": 6,
+	"row": 1,
+	"type": "spot",
+	"x": 674,
+	"y": 145,
+	"z": 0,
+	"intensity": 32527.426
+}, {
+	"analyte": "IL-5",
+	"column": 7,
+	"row": 1,
+	"type": "spot",
+	"x": 791,
+	"y": 145,
+	"z": 0,
+	"intensity": 7888.4536
+}, {
+	"analyte": "BLANK",
+	"column": 1,
+	"row": 2,
+	"type": "spot",
+	"x": 92,
+	"y": 262,
+	"z": 0,
+	"intensity": 84.486115
+}, {
+	"analyte": "BLANK",
+	"column": 2,
+	"row": 2,
+	"type": "spot",
+	"x": 209,
+	"y": 262,
+	"z": 0,
+	"intensity": 94.77391
+}, {
+	"analyte": "IL-6",
+	"column": 3,
+	"row": 2,
+	"type": "spot",
+	"x": 325,
+	"y": 262,
+	"z": 0,
+	"intensity": 53292.98
+}, {
+	"analyte": "IL-8",
+	"column": 4,
+	"row": 2,
+	"type": "spot",
+	"x": 442,
+	"y": 262,
+	"z": 0,
+	"intensity": 41052.95
+}, {
+	"analyte": "IL-10",
+	"column": 5,
+	"row": 2,
+	"type": "spot",
+	"x": 558,
+	"y": 262,
+	"z": 0,
+	"intensity": 53983.855
+}, {
+	"analyte": "IL-13",
+	"column": 6,
+	"row": 2,
+	"type": "spot",
+	"x": 674,
+	"y": 262,
+	"z": 0,
+	"intensity": 30358.771
+}, {
+	"analyte": "IFN-gamma",
+	"column": 7,
+	"row": 2,
+	"type": "spot",
+	"x": 791,
+	"y": 262,
+	"z": 0,
+	"intensity": 33377.85
+}, {
+	"analyte": "MCP-1",
+	"column": 1,
+	"row": 3,
+	"type": "spot",
+	"x": 92,
+	"y": 378,
+	"z": 0,
+	"intensity": 23636.586
+}, {
+	"analyte": "TNF-alpha",
+	"column": 2,
+	"row": 3,
+	"type": "spot",
+	"x": 209,
+	"y": 378,
+	"z": 0,
+	"intensity": 44426.426
+}, {
+	"analyte": "BLANK",
+	"column": 3,
+	"row": 3,
+	"type": "spot",
+	"x": 325,
+	"y": 378,
+	"z": 0,
+	"intensity": 83.43671
+}, {
+	"analyte": "BLANK",
+	"column": 4,
+	"row": 3,
+	"type": "spot",
+	"x": 442,
+	"y": 378,
+	"z": 0,
+	"intensity": 141.63153
+}, {
+	"analyte": "BLANK",
+	"column": 5,
+	"row": 3,
+	"type": "spot",
+	"x": 558,
+	"y": 378,
+	"z": 0,
+	"intensity": 85.485596
+}, {
+	"analyte": "IL-1alpha",
+	"column": 6,
+	"row": 3,
+	"type": "spot",
+	"x": 674,
+	"y": 378,
+	"z": 0,
+	"intensity": 41561.11
+}, {
+	"analyte": "IL-1beta",
+	"column": 7,
+	"row": 3,
+	"type": "spot",
+	"x": 791,
+	"y": 378,
+	"z": 0,
+	"intensity": 56763.41
+}, {
+	"analyte": "IL-2",
+	"column": 1,
+	"row": 4,
+	"type": "spot",
+	"x": 92,
+	"y": 495,
+	"z": 0,
+	"intensity": 45785.4
+}, {
+	"analyte": "IL-4",
+	"column": 2,
+	"row": 4,
+	"type": "spot",
+	"x": 209,
+	"y": 495,
+	"z": 0,
+	"intensity": 36420.45
+}, {
+	"analyte": "IL-5",
+	"column": 3,
+	"row": 4,
+	"type": "spot",
+	"x": 325,
+	"y": 495,
+	"z": 0,
+	"intensity": 8233.519
+}, {
+	"analyte": "IL-6",
+	"column": 4,
+	"row": 4,
+	"type": "spot",
+	"x": 442,
+	"y": 495,
+	"z": 0,
+	"intensity": 40487.926
+}, {
+	"analyte": "IL-8",
+	"column": 5,
+	"row": 4,
+	"type": "spot",
+	"x": 558,
+	"y": 495,
+	"z": 0,
+	"intensity": 40406.938
+}, {
+	"analyte": "IL-10",
+	"column": 6,
+	"row": 4,
+	"type": "spot",
+	"x": 674,
+	"y": 495,
+	"z": 0,
+	"intensity": 51561.938
+}, {
+	"analyte": "IL-13",
+	"column": 7,
+	"row": 4,
+	"type": "spot",
+	"x": 791,
+	"y": 495,
+	"z": 0,
+	"intensity": 30093.72
+}, {
+	"analyte": "IFN-gamma",
+	"column": 1,
+	"row": 5,
+	"type": "spot",
+	"x": 92,
+	"y": 611,
+	"z": 0,
+	"intensity": 37495.773
+}, {
+	"analyte": "MCP-1",
+	"column": 2,
+	"row": 5,
+	"type": "spot",
+	"x": 209,
+	"y": 611,
+	"z": 0,
+	"intensity": 24602.879
+}, {
+	"analyte": "TNF-alpha",
+	"column": 3,
+	"row": 5,
+	"type": "spot",
+	"x": 325,
+	"y": 611,
+	"z": 0,
+	"intensity": 39486.98
+}, {
+	"analyte": "BLANK",
+	"column": 4,
+	"row": 5,
+	"type": "spot",
+	"x": 442,
+	"y": 611,
+	"z": 0,
+	"intensity": 101.357285
+}, {
+	"analyte": "BLANK",
+	"column": 5,
+	"row": 5,
+	"type": "spot",
+	"x": 558,
+	"y": 611,
+	"z": 0,
+	"intensity": 89.93718
+}, {
+	"analyte": "BLANK",
+	"column": 6,
+	"row": 5,
+	"type": "spot",
+	"x": 674,
+	"y": 611,
+	"z": 0,
+	"intensity": 87.051956
+}, {
+	"analyte": "IL-1alpha",
+	"column": 7,
+	"row": 5,
+	"type": "spot",
+	"x": 791,
+	"y": 611,
+	"z": 0,
+	"intensity": 41669.438
+}, {
+	"analyte": "IL-1beta",
+	"column": 1,
+	"row": 6,
+	"type": "spot",
+	"x": 92,
+	"y": 727,
+	"z": 0,
+	"intensity": 63174.66
+}, {
+	"analyte": "IL-2",
+	"column": 2,
+	"row": 6,
+	"type": "spot",
+	"x": 209,
+	"y": 727,
+	"z": 0,
+	"intensity": 42710.695
+}, {
+	"analyte": "IL-4",
+	"column": 3,
+	"row": 6,
+	"type": "spot",
+	"x": 325,
+	"y": 727,
+	"z": 0,
+	"intensity": 34540.203
+}, {
+	"analyte": "IL-5",
+	"column": 4,
+	"row": 6,
+	"type": "spot",
+	"x": 442,
+	"y": 727,
+	"z": 0,
+	"intensity": 8929.545
+}, {
+	"analyte": "IL-6",
+	"column": 5,
+	"row": 6,
+	"type": "spot",
+	"x": 558,
+	"y": 727,
+	"z": 0,
+	"intensity": 62401.703
+}, {
+	"analyte": "IL-8",
+	"column": 6,
+	"row": 6,
+	"type": "spot",
+	"x": 674,
+	"y": 727,
+	"z": 0,
+	"intensity": 44929.066
+}, {
+	"analyte": "IL-10",
+	"column": 7,
+	"row": 6,
+	"type": "spot",
+	"x": 791,
+	"y": 727,
+	"z": 0,
+	"intensity": 63052.26
+}, {
+	"analyte": "IL-13",
+	"column": 1,
+	"row": 7,
+	"type": "spot",
+	"x": 92,
+	"y": 844,
+	"z": 0,
+	"intensity": 32533.348
+}, {
+	"analyte": "IFN-gamma",
+	"column": 2,
+	"row": 7,
+	"type": "spot",
+	"x": 209,
+	"y": 844,
+	"z": 0,
+	"intensity": 34478.758
+}, {
+	"analyte": "MCP-1",
+	"column": 3,
+	"row": 7,
+	"type": "spot",
+	"x": 325,
+	"y": 844,
+	"z": 0,
+	"intensity": 23828.137
+}, {
+	"analyte": "TNF-alpha",
+	"column": 4,
+	"row": 7,
+	"type": "spot",
+	"x": 442,
+	"y": 844,
+	"z": 0,
+	"intensity": 44748.19
+}, {
+	"analyte": "BLANK",
+	"column": 5,
+	"row": 7,
+	"type": "spot",
+	"x": 558,
+	"y": 844,
+	"z": 0,
+	"intensity": 91.8247
+}, {
+	"analyte": "BLANK",
+	"column": 6,
+	"row": 7,
+	"type": "spot",
+	"x": 674,
+	"y": 844,
+	"z": 0,
+	"intensity": 96.03407
+}, {
+	"analyte": "BLANK",
+	"column": 7,
+	"row": 7,
+	"type": "spot",
+	"x": 791,
+	"y": 844,
+	"z": 0,
+	"intensity": 94.50472
+}]

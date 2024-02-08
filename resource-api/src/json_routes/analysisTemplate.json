@@ -1,0 +1,7 @@
+{
+	"singularEntity": "analysisTemplate",
+	"pluralEntity": "analysisTemplates",
+	"hasHeartbeat": false,
+	"hasAttachments": false,
+	"jsonSchema": {}
+}

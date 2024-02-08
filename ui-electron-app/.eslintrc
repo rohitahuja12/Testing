@@ -1,0 +1,155 @@
+{
+  "extends": ["airbnb", "airbnb/hooks"],
+  "ignorePatterns": ["**/node_modules/*", "**/dist/*", "**/precompile/*"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "globals": {
+    "document": "readonly",
+    "window": "readonly",
+    "require": "readonly",
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-empty": [
+      2,
+      {
+        "allowEmptyCatch": true
+      }
+    ],
+    "no-with": 2,
+    "no-multiple-empty-lines": 2,
+    "no-multi-str": 2,
+    "one-var": [2, "never"],
+    "no-unused-vars": [1],
+    "no-mixed-spaces-and-tabs": 2,
+    "no-unsafe-optional-chaining": 0,
+    "no-return-assign": 0,
+    "no-param-reassign": ["error", { "props": false }],
+    "dot-location": [2, "property"],
+    "operator-linebreak": [2, "before"],
+    "padded-blocks": [2, "never"],
+    "import/extensions": [0, "ignorePackages"],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": [0],
+    "quote-props": [
+      2,
+      "as-needed",
+      {
+        "keywords": true
+      }
+    ],
+    "key-spacing": [
+      2,
+      {
+        "beforeColon": false,
+        "afterColon": true
+      }
+    ],
+    "keyword-spacing": [
+      2,
+      {
+        "after": false,
+        "overrides": {
+          "case": {
+            "after": true
+          },
+          "if": {
+            "after": true
+          },
+          "else": {
+            "after": true
+          },
+          "return": {
+            "after": true
+          },
+          "var": {
+            "after": true
+          },
+          "const": {
+            "after": true
+          },
+          "let": {
+            "after": true
+          },
+          "try": {
+            "after": true
+          },
+          "from": {
+            "after": true
+          },
+          "import": {
+            "after": true
+          },
+          "export": {
+            "after": true
+          }
+        }
+      }
+    ],
+    "space-unary-ops": [
+      2,
+      {
+        "words": false,
+        "nonwords": false
+      }
+    ],
+    "space-before-function-paren": [
+      2,
+      {
+        "anonymous": "ignore",
+        "named": "never"
+      }
+    ],
+    "no-spaced-func": 2,
+    "space-in-parens": [2, "never"],
+    "max-len": [
+      2,
+      190,
+      {
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "semi": [2, "always"],
+    "comma-style": [2, "last"],
+    "comma-dangle": [2, "never"],
+    "curly": [2, "all"],
+    // "brace-style": [
+    //   2,
+    //   "stroustrup",
+    //   {
+    //     "allowSingleLine": true
+    //   }
+    // ],
+    "eol-last": 2,
+    "space-infix-ops": 2,
+    "spaced-comment": [2, "always"],
+    "space-before-blocks": [2, "always"],
+    "object-curly-spacing": [2, "always"],
+    "indent": [
+      2,
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "import/prefer-default-export": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": "off"
+  }
+}

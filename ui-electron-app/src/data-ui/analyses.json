@@ -1,0 +1,636 @@
+{
+  "total_rows": 1,
+  "offset": 0,
+  "rows": [
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    },
+    {
+      "id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+      "key": [
+        "pArrayStandards",
+        "scan-parray-....."
+      ],
+      "value": {
+        "_id": "analysis-pArrayStandards-scan-parray-.....-2022-04-18T16:59:41.681Z",
+        "_rev": "1-7523fb122384a621309ece5404761122",
+        "analysisProtocol": "pArrayStandards",
+        "analysisProtocolArgs": {
+          "dilutionFactor": 4,
+          "initialConcentrations": {
+            "anlt1": 1000,
+            "anlt2": 1000,
+            "anlt3": 500
+          },
+          "initialConcentrationUnits": "pg/ml",
+          "productId": "kit14",
+          "productListConfigId": "config-reader123-productlist-2022-03-15T14:56:20Z",
+          "wells": [
+            {
+              "label": "std1",
+              "row": "A",
+              "column": "1",
+              "type": "standard",
+              "knownConcentration": 1000,
+              "replicateGroup": 1,
+              "replicateId": 1
+            }
+          ]
+        },
+        "name": "Josh's analysis",
+        "scanId": "scan-parray-.....",
+        "type": "analysis",
+        "createdAt": "2022-04-18T16:59:41.681Z",
+        "errors": [],
+        "results": {},
+        "status": "QUEUED",
+        "validationMode": false
+      }
+    }
+  ]
+}

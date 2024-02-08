@@ -1,0 +1,11 @@
+{ 
+"minimumSpotSize":4,
+"maximumSpotSize":24,
+"spotIntensityThresholdMultiplier":1.5,
+"maxSpotLinearDeviation":2.6,
+"gridOriginX":765,
+"gridOriginY":412,
+"gridWindowWidth":175,
+"gridDeltaX":367,
+"gridDeltaY":367
+}

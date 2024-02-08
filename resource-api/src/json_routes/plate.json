@@ -1,0 +1,28 @@
+{
+	"singularEntity": "plate",
+	"pluralEntity": "plates",
+	"hasHeartbeat": false,
+	"allowIdOnCreate": true,
+	"jsonSchema": {
+		"type": "object",
+		"description": "A plate.",
+		"properties": {
+			"productId": {
+				"type": "string",
+				"description": "The id of the product associated with this plate."
+			},
+			"barcode": {
+				"type": "string",
+				"description": "The value of the barcode printed on the side of the plate."
+			},
+			"_id": {
+				"type": "string",
+				"description": "This id will match the MES id"
+			}
+		},
+		"required": [
+			"productId",
+			"barcode"
+		]
+	}
+}

@@ -1,0 +1,12 @@
+logs/
+images/
+**/__pycache__/
+
+couchdb/data/
+couchdb/dataold/
+couchdb/node_modules/
+
+_trash_analyzerNEW/
+_trash_analyzerOLD/
+.git/
+test-data/

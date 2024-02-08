@@ -1,0 +1,15 @@
+{
+	"description": "Synchronize products in database with products on local disk",
+	"strategy": "polling",
+	"pollPeriodSeconds": "5",
+	"source": {
+		"type": "api",
+		"host": "0.0.0.0:5000",
+		"documentType": "products",
+		"nameField": "productName"
+	},
+	"destination": {
+		"type": "filesystem",
+		"path": "/products"
+	}
+}

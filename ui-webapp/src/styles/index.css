@@ -1,0 +1,66 @@
+:root {
+  --gray-1: #f1f3f5;
+}
+
+@font-face {
+  font-family: "formaDJR";
+  src: url("./../assets/forma_DJR/forma_djr_display-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("./../assets/Manrope/manrope-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("./../assets/Manrope/manrope-bold.woff2") format("woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("./../assets/Manrope/manrope-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("./../assets/Manrope/manrope-semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "manrope";
+  src: url("./../assets/Manrope/manrope-light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+* {
+  font-family: manrope;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 12px;
+}
+body {
+  margin: auto;
+  /* max-width: 38rem; */
+  /* padding: 2rem; */
+  /* color: white; */
+  /* background-color: #1a1a1a; */
+  background-color: var(--gray-1);
+}
+
+#app,
+#app > div:first-child {
+  height: 100%;
+}
+
+hr {
+  margin: 20px 0;
+  border: 0;
+  border-bottom: 1px solid #e2e2e2;
+}

@@ -1,0 +1,24 @@
+FROM python:3.9-slim-buster
+
+# install docker
+RUN apt-get update
+RUN apt-get install curl -y
+RUN apt-get install docker.io -y
+RUN docker --version
+RUN curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
+&& chmod +x /usr/local/bin/docker-compose
+
+COPY logger/requirements.txt phoenix/logger/requirements.txt
+RUN pip install -r phoenix/logger/requirements.txt
+
+COPY logger/src phoenix/logger/src
+COPY common phoenix/common
+
+COPY docker-compose.yml phoenix/docker-compose.yml
+
+ENV COMPONENT_CLASS=logger
+ENV PHOENIX_HOME=/phoenix
+
+WORKDIR phoenix
+
+CMD ["python", "./logger/src/main.py"]

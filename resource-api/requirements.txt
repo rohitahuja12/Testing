@@ -1,0 +1,14 @@
+boto3
+dnspython
+flask
+flask-cors
+gunicorn
+gunicorn[gevent]
+python-jose
+python-jose[cryptography]
+jsonschema
+marshmallow-dataclass
+pymongo
+pyopenssl
+simple_websocket
+Authlib

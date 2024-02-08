@@ -1,0 +1,7 @@
+{
+	"singularEntity": "defaultPlateMap",
+	"pluralEntity": "defaultPlateMaps",
+	"hasHeartbeat": false,
+	"hasAttachments": false,
+	"jsonSchema": {}
+}
