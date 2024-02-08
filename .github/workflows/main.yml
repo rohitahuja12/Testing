@@ -43,3 +43,4 @@ jobs:
             test_ui/pytest_report.xml
             test_ui/pytest_report.html
             test_ui/reports
+            
