@@ -42,4 +42,4 @@ jobs:
           path: |
             pytest_report.xml
             pytest_report.html
-            reports
+            test_ui/reports
