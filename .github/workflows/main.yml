@@ -40,5 +40,4 @@ jobs:
         with:
           name: test-results
           path: |
-                cd test_ui
-                reports
+            test_ui/reports
