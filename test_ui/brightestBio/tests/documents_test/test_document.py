@@ -27,20 +27,20 @@ class TestDocuments:
         record_property("testrail_result_comment", "4. Verified default title of the reader is visible.")
         expected_title = "Documentss"
         assert actual_title == expected_title, f"Expected title: '{expected_title}', but got: '{actual_title}'"
-#
-#     def test_go_back_to_dashboard_from_documents_page(self, browser_driver, record_property, setup):
-#         scans_page = ScansPage(browser_driver)
-#         login_page = TestLoginPage(browser_driver)
-#
-#         document = DocumentPage(browser_driver)
-#         record_property("testrail_result_comment", "2. Navigate to the Documents module.")
-#         document.click_view_on_documents_option()
-#         scans_page.click_back_to_dashboard_button()
-#         record_property("testrail_result_comment", "3. Click on back to dashboard button.")
-#         time.sleep(5)
-#         empower_dashboard = browser_driver.find_element(By.XPATH, login_page.empowerDashboard)
-#         assert empower_dashboard.is_displayed()
-#         record_property("testrail_result_comment", "4. Verified User is successfully back to dashboard")
+
+    def test_go_back_to_dashboard_from_documents_page(self, browser_driver, record_property, setup):
+        scans_page = ScansPage(browser_driver)
+        login_page = TestLoginPage(browser_driver)
+
+        document = DocumentPage(browser_driver)
+        record_property("testrail_result_comment", "2. Navigate to the Documents module.")
+        document.click_view_on_documents_option()
+        scans_page.click_back_to_dashboard_button()
+        record_property("testrail_result_comment", "3. Click on back to dashboard button.")
+        time.sleep(5)
+        empower_dashboard = browser_driver.find_element(By.XPATH, login_page.empowerDashboard)
+        assert empower_dashboard.is_displayed()
+        record_property("testrail_result_comment", "4. Verified User is successfully back to dashboard")
 #
 #     def test_verify_connect_to_empower_reader_document(self, browser_driver, record_property, setup):
 #         document_page = DocumentPage(browser_driver)

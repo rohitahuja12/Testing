@@ -4,13 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38928c2e-e08e-4e8f-bb77-ffe17774cdb6" name="Changes" comment="" />
+    <list default="true" id="38928c2e-e08e-4e8f-bb77-ffe17774cdb6" name="Changes" comment="new">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/brightestBio/tests/documents_test/reports/77eadd3b-9d2d-4e8a-97b8-68aef7d6d015_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brightestBio/tests/documents_test/reports/77eadd3b-9d2d-4e8a-97b8-68aef7d6d015_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/brightestBio/tests/documents_test/test_document.py" beforeDir="false" afterPath="$PROJECT_DIR$/brightestBio/tests/documents_test/test_document.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1c086c3a-618f-425c-ad75-b0fa1b2f8d42_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1c086c3a-618f-425c-ad75-b0fa1b2f8d42_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1c2e7418-7157-4996-98bf-23972c6d3a3f_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1c2e7418-7157-4996-98bf-23972c6d3a3f_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1f3f6512-0fd6-4cbb-8837-d0db8705ba01_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/1f3f6512-0fd6-4cbb-8837-d0db8705ba01_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/36b4532e-b43a-487b-88be-2007873fc5c3_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/36b4532e-b43a-487b-88be-2007873fc5c3_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/6055d8f2-4c51-49df-a3bc-e7d6db671ca6_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/6055d8f2-4c51-49df-a3bc-e7d6db671ca6_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/6823abf2-7756-4595-8660-fca6326f263e_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/6823abf2-7756-4595-8660-fca6326f263e_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/7c251fad-a960-4b48-9556-fe0ae090df6e_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/7c251fad-a960-4b48-9556-fe0ae090df6e_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/8c9da859-de16-450f-8d4f-89029dc53bbe_browser_logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/8c9da859-de16-450f-8d4f-89029dc53bbe_screenshot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/d4a65b29-b331-49c3-b412-9954b055cb13_browser_logs.json" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
@@ -22,14 +49,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;pytest-automation-testing&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/BB-Rohit-RV/Desktop/test_ui/Phoenix/test_ui/brightestBio/pages&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "new",
+    "last_opened_file_path": "C:/Users/BB-Rohit-RV/Desktop/test_ui/Phoenix/test_ui/brightestBio/pages"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\BB-Rohit-RV\Desktop\test_ui\Phoenix\test_ui\brightestBio\pages" />
@@ -52,6 +79,35 @@
       <option name="presentableId" value="Default" />
       <updated>1706014310489</updated>
     </task>
+    <task id="LOCAL-00001" summary="new">
+      <option name="closed" value="true" />
+      <created>1707417119574</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417119574</updated>
+    </task>
+    <task id="LOCAL-00002" summary="new">
+      <option name="closed" value="true" />
+      <created>1707417249695</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1707417249695</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new">
+      <option name="closed" value="true" />
+      <created>1707418291270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1707418291270</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new" />
+    <option name="LAST_COMMIT_MESSAGE" value="new" />
   </component>
 </project>
